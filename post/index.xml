@@ -8,12 +8,12 @@
         <language>en</language>
         <copyright>Example Person</copyright>
         <lastBuildDate>Fri, 10 May 2024 22:27:40 +0800</lastBuildDate><atom:link href="https://example.com/post/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Hugo &#43; GitHub Page 部署个人博客</title>
-        <link>https://example.com/p/hugo--github-page-%E9%83%A8%E7%BD%B2%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+        <title>Hugo &#43; GitHub Pages 部署个人博客</title>
+        <link>https://example.com/p/hugo--github-pages-%E9%83%A8%E7%BD%B2%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
         <pubDate>Fri, 10 May 2024 22:27:40 +0800</pubDate>
         
-        <guid>https://example.com/p/hugo--github-page-%E9%83%A8%E7%BD%B2%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
-        <description>&lt;h2 id=&#34;使用hugo和github-page部署个人博客&#34;&gt;使用Hugo和GitHub Page部署个人博客
+        <guid>https://example.com/p/hugo--github-pages-%E9%83%A8%E7%BD%B2%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+        <description>&lt;h2 id=&#34;使用hugo和github-pages部署个人博客&#34;&gt;使用Hugo和GitHub Pages部署个人博客
 &lt;/h2&gt;&lt;h3 id=&#34;安装hugo&#34;&gt;安装Hugo
 &lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://git-scm.com/book/en/v2/Getting-Started-Installing-Git&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
