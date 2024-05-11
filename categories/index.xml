@@ -7,44 +7,20 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Yibel</copyright>
-        <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://y1bel.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Test</title>
-        <link>https://y1bel.github.io/categories/test/</link>
-        <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
+        <lastBuildDate>Fri, 10 May 2024 22:27:40 +0800</lastBuildDate><atom:link href="https://y1bel.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>博客</title>
+        <link>https://y1bel.github.io/categories/%E5%8D%9A%E5%AE%A2/</link>
+        <pubDate>Fri, 10 May 2024 22:27:40 +0800</pubDate>
         
-        <guid>https://y1bel.github.io/categories/test/</guid>
-        <description>&lt;img src="https://y1bel.github.io/categories/test/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post Test" /&gt;</description>
-        </item>
-        <item>
-        <title>测试</title>
-        <link>https://y1bel.github.io/categories/%E6%B5%8B%E8%AF%95/</link>
-        <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
-        
-        <guid>https://y1bel.github.io/categories/%E6%B5%8B%E8%AF%95/</guid>
+        <guid>https://y1bel.github.io/categories/%E5%8D%9A%E5%AE%A2/</guid>
         <description></description>
         </item>
         <item>
-        <title>Syntax</title>
-        <link>https://y1bel.github.io/categories/syntax/</link>
-        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+        <title>教程</title>
+        <link>https://y1bel.github.io/categories/%E6%95%99%E7%A8%8B/</link>
+        <pubDate>Fri, 10 May 2024 22:27:40 +0800</pubDate>
         
-        <guid>https://y1bel.github.io/categories/syntax/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Themes</title>
-        <link>https://y1bel.github.io/categories/themes/</link>
-        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://y1bel.github.io/categories/themes/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Test With Whitespaces</title>
-        <link>https://y1bel.github.io/categories/test-with-whitespaces/</link>
-        <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://y1bel.github.io/categories/test-with-whitespaces/</guid>
+        <guid>https://y1bel.github.io/categories/%E6%95%99%E7%A8%8B/</guid>
         <description></description>
         </item>
         
