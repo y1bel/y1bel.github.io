@@ -1,11 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Tags on Yibel&#39;s Blog</title>
-        <link>http://localhost:1313/zh-cn/tags/</link>
-        <description>Recent content in Tags on Yibel&#39;s Blog</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <copyright>Yibel</copyright><atom:link href="http://localhost:1313/zh-cn/tags/index.xml" rel="self" type="application/rss+xml" />
-    </channel>
+        <title>Tags - 标签 - 异别de自留地</title>
+        <link>https://y1bel.github.io/zh-cn/tags/</link>
+        <description>Tags - 标签 - 异别de自留地</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><atom:link href="https://y1bel.github.io/zh-cn/tags/" rel="self" type="application/rss+xml" /></channel>
 </rss>
