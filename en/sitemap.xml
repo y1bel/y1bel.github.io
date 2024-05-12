@@ -5,19 +5,6 @@
     <loc>https://y1bel.github.io/en/posts/emoji-support/</loc>
     <lastmod>2019-10-01T17:55:28+08:00</lastmod>
   </url><url>
-    <loc>https://y1bel.github.io/en/</loc>
-    <lastmod>2022-07-08T11:34:47+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hans"
-                href="https://y1bel.github.io/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://y1bel.github.io/en/"
-                />
-  </url><url>
     <loc>https://y1bel.github.io/en/authors/</loc>
     <lastmod>2022-07-08T11:34:47+08:00</lastmod>
     <xhtml:link
@@ -185,6 +172,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://y1bel.github.io/en/tags/"
+                />
+  </url><url>
+    <loc>https://y1bel.github.io/en/</loc>
+    <lastmod>2022-07-08T11:34:47+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-hans"
+                href="https://y1bel.github.io/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://y1bel.github.io/en/"
                 />
   </url><url>
     <loc>https://y1bel.github.io/en/tags/emoji/</loc>

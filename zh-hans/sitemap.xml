@@ -2,19 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://y1bel.github.io/</loc>
-    <lastmod>2024-05-12T15:54:35+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://y1bel.github.io/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hans"
-                href="https://y1bel.github.io/"
-                />
-  </url><url>
     <loc>https://y1bel.github.io/authors/</loc>
     <lastmod>2024-05-12T15:54:35+08:00</lastmod>
     <xhtml:link
@@ -49,6 +36,19 @@
   </url><url>
     <loc>https://y1bel.github.io/authors/yibel/</loc>
     <lastmod>2024-05-12T15:54:35+08:00</lastmod>
+  </url><url>
+    <loc>https://y1bel.github.io/</loc>
+    <lastmod>2024-05-12T15:54:35+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://y1bel.github.io/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-hans"
+                href="https://y1bel.github.io/"
+                />
   </url><url>
     <loc>https://y1bel.github.io/tags/</loc>
     <lastmod>2024-05-12T15:54:35+08:00</lastmod>
