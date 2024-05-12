@@ -2,48 +2,114 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://y1bel.github.io/zh-cn/</loc><xhtml:link
+            <loc>http://localhost:1313/zh-cn/posts/basic-markdown-syntax/</loc><lastmod>2020-01-01T16:45:40&#43;08:00</lastmod><xhtml:link
                         rel="alternate"
                         hreflang="en"
-                        href="https://y1bel.github.io/"
+                        href="http://localhost:1313/posts/basic-markdown-syntax/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="zh-cn"
-                    href="https://y1bel.github.io/zh-cn/"
+                    href="http://localhost:1313/zh-cn/posts/basic-markdown-syntax/"
                     /></url><url>
-            <loc>https://y1bel.github.io/zh-cn/categories/</loc><xhtml:link
+            <loc>http://localhost:1313/zh-cn/posts/emoji-support/</loc><lastmod>2019-10-01T17:55:28&#43;08:00</lastmod><xhtml:link
                         rel="alternate"
                         hreflang="en"
-                        href="https://y1bel.github.io/categories/"
+                        href="http://localhost:1313/posts/emoji-support/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="zh-cn"
-                    href="https://y1bel.github.io/zh-cn/categories/"
+                    href="http://localhost:1313/zh-cn/posts/emoji-support/"
                     /></url><url>
-            <loc>https://y1bel.github.io/zh-cn/page/</loc><xhtml:link
+            <loc>http://localhost:1313/zh-cn/categories/</loc><lastmod>2020-01-01T16:45:40&#43;08:00</lastmod><xhtml:link
                         rel="alternate"
                         hreflang="en"
-                        href="https://y1bel.github.io/page/"
+                        href="http://localhost:1313/categories/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="zh-cn"
-                    href="https://y1bel.github.io/zh-cn/page/"
+                    href="http://localhost:1313/zh-cn/categories/"
                     /></url><url>
-            <loc>https://y1bel.github.io/zh-cn/tags/</loc><xhtml:link
+            <loc>http://localhost:1313/zh-cn/tags/html/</loc><lastmod>2020-01-01T16:45:40&#43;08:00</lastmod><xhtml:link
                         rel="alternate"
                         hreflang="en"
-                        href="https://y1bel.github.io/tags/"
+                        href="http://localhost:1313/tags/html/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="zh-cn"
-                    href="https://y1bel.github.io/zh-cn/tags/"
+                    href="http://localhost:1313/zh-cn/tags/html/"
                     /></url><url>
-            <loc>https://y1bel.github.io/zh-cn/page/about/</loc><xhtml:link
+            <loc>http://localhost:1313/zh-cn/tags/markdown/</loc><lastmod>2020-01-01T16:45:40&#43;08:00</lastmod><xhtml:link
                         rel="alternate"
                         hreflang="en"
-                        href="https://y1bel.github.io/page/about/"
+                        href="http://localhost:1313/tags/markdown/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="zh-cn"
-                    href="https://y1bel.github.io/zh-cn/page/about/"
+                    href="http://localhost:1313/zh-cn/tags/markdown/"
+                    /></url><url>
+            <loc>http://localhost:1313/zh-cn/categories/markdown/</loc><lastmod>2020-01-01T16:45:40&#43;08:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="http://localhost:1313/categories/markdown/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-cn"
+                    href="http://localhost:1313/zh-cn/categories/markdown/"
+                    /></url><url>
+            <loc>http://localhost:1313/zh-cn/posts/</loc><lastmod>2020-01-01T16:45:40&#43;08:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="http://localhost:1313/posts/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-cn"
+                    href="http://localhost:1313/zh-cn/posts/"
+                    /></url><url>
+            <loc>http://localhost:1313/zh-cn/tags/</loc><lastmod>2020-01-01T16:45:40&#43;08:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="http://localhost:1313/tags/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-cn"
+                    href="http://localhost:1313/zh-cn/tags/"
+                    /></url><url>
+            <loc>http://localhost:1313/zh-cn/</loc><lastmod>2020-01-01T16:45:40&#43;08:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="http://localhost:1313/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-cn"
+                    href="http://localhost:1313/zh-cn/"
+                    /></url><url>
+            <loc>http://localhost:1313/zh-cn/tags/emoji/</loc><lastmod>2019-10-01T17:55:28&#43;08:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="http://localhost:1313/tags/emoji/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-cn"
+                    href="http://localhost:1313/zh-cn/tags/emoji/"
+                    /></url><url>
+            <loc>http://localhost:1313/zh-cn/about/</loc><lastmod>2019-08-02T11:04:49&#43;08:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="http://localhost:1313/about/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-cn"
+                    href="http://localhost:1313/zh-cn/about/"
+                    /></url><url>
+            <loc>http://localhost:1313/zh-cn/tags/installation/</loc></url><url>
+            <loc>http://localhost:1313/zh-cn/tags/content/</loc></url><url>
+            <loc>http://localhost:1313/zh-cn/tags/configuration/</loc></url><url>
+            <loc>http://localhost:1313/zh-cn/categories/documentation/</loc><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="http://localhost:1313/categories/documentation/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-cn"
+                    href="http://localhost:1313/zh-cn/categories/documentation/"
                     /></url></urlset>

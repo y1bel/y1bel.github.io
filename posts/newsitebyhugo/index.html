@@ -1,0 +1,1116 @@
+<!doctype html>
+<html class="position-relative" itemscope itemtype="https://schema.org/WebPage" lang="zh-hans"
+  data-bs-theme="auto" data-palette="purple">
+  <head><script src="/assets/init/bundle.min.7bf0a5677c5047d9f8967c5e8e384a880193fdeab78163a225b88a3eac9842bc.js" integrity="sha256-e/ClZ3xQR9n4lnxejjhKiAGT/eq3gWOiJbiKPqyYQrw=" crossorigin="anonymous"></script>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hugo&#43;GitHub Pages部署个人博客 - </title>
+    <link rel="icon" href="/favicon_hucccd9e706a19cc8586335b155a80c266_43860_16x16_resize_q75_h2_box_2.webp" sizes="16x16" type="image/webp">
+    <link rel="icon" href="/favicon_hucccd9e706a19cc8586335b155a80c266_43860_32x32_resize_q75_h2_box_2.webp" sizes="32x32" type="image/webp">
+    <link rel="icon" href="/favicon_hucccd9e706a19cc8586335b155a80c266_43860_150x150_resize_q75_h2_box_2.webp" sizes="150x150" type="image/webp">
+    <link rel="apple-touch-icon" href="/favicon_hucccd9e706a19cc8586335b155a80c266_43860_180x180_resize_q75_h2_box_2.webp" sizes="180x180" type="image/webp">
+    <link rel="icon" href="/favicon_hucccd9e706a19cc8586335b155a80c266_43860_192x192_resize_q75_h2_box_2.webp" sizes="192x192" type="image/webp">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#6f42c1">
+<meta name="keywords" content="" />
+  <meta name="description" content="在Windows10上利用Hugo搭建个人博客的基本步骤，包含从安装到部署的全部过程，以及搭建过程中遇到的一些问题及解决方法。" />
+    <meta name="robots" content="index, follow" /><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://y1bel.github.io/posts/newsitebyhugo/featured-image.png"><meta name="twitter:title" content="Hugo&#43;GitHub Pages部署个人博客">
+<meta name="twitter:description" content="在Windows10上利用Hugo搭建个人博客的基本步骤，包含从安装到部署的全部过程，以及搭建过程中遇到的一些问题及解决方法。">
+      <meta name="twitter:site" content="@yourtwitterusername">
+<meta property="og:url" content="https://y1bel.github.io/posts/newsitebyhugo/">
+  <meta property="og:title" content="Hugo&#43;GitHub Pages部署个人博客">
+  <meta property="og:description" content="在Windows10上利用Hugo搭建个人博客的基本步骤，包含从安装到部署的全部过程，以及搭建过程中遇到的一些问题及解决方法。">
+  <meta property="og:locale" content="zh-hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-05-12T15:54:35+08:00">
+    <meta property="article:modified_time" content="2024-05-12T15:54:35+08:00">
+    <meta property="article:tag" content="Hugo">
+    <meta property="og:image" content="https://y1bel.github.io/posts/newsitebyhugo/featured-image.png">
+
+  <meta itemprop="name" content="Hugo&#43;GitHub Pages部署个人博客">
+  <meta itemprop="description" content="在Windows10上利用Hugo搭建个人博客的基本步骤，包含从安装到部署的全部过程，以及搭建过程中遇到的一些问题及解决方法。">
+  <meta itemprop="datePublished" content="2024-05-12T15:54:35+08:00">
+  <meta itemprop="dateModified" content="2024-05-12T15:54:35+08:00">
+  <meta itemprop="wordCount" content="1051">
+  <meta itemprop="image" content="https://y1bel.github.io/posts/newsitebyhugo/featured-image.png">
+  <meta itemprop="keywords" content="Hugo">
+  <meta property="og:image:alt" content="Hugo&#43;GitHub Pages部署个人博客" />
+  <meta name="twitter:image:alt" content="Hugo&#43;GitHub Pages部署个人博客" />
+  <link rel="manifest" href="/manifest.json">
+
+  
+
+
+<link data-precache rel="stylesheet" href="/assets/main/bundle.min.02bcd09c873f079a57a6907886a4dd78dabe0a341a2f08ea42fa24e956cb025c.css" integrity="sha256-ArzQnIc/B5pXppB4hqTdeNq+CjQaLwjqQvok6VbLAlw=" crossorigin="anonymous">
+
+    <link data-precache rel="stylesheet" href="/assets/viewer/bundle.min.8c1002839fa22c1350d6ae1eef6593120e108f973c41348be9b5065430566aaf.css" integrity="sha256-jBACg5&#43;iLBNQ1q4e72WTEg4Qj5c8QTSL6bUGVDBWaq8=" crossorigin="anonymous">
+
+
+</head>
+  <body><header class="mb-4 sticky-top">
+  
+<nav class="top-app-bar shadow navbar navbar-expand-xxl">
+  <div class="container">
+<a class="navbar-brand d-flex align-items-center flex-grow-1 flex-xxl-grow-0 justify-content-xxl-start ms-2 ms-xxl-0 mx-auto me-xxl-2"
+    href="https://y1bel.github.io/">
+    <picture><img class="logo " alt="Logo" src="https://y1bel.github.io/images/logo.webp?v=2ea6b19a95403790fa4b0c2264759edf" loading="lazy" width="400" height="400" />
+</picture>
+HBS
+</a>
+
+    <div class="offcanvas-xxl offcanvas-end flex-grow-1" data-bs-scroll="true" tabindex="-1" id="navbarMenus" aria-labelledby="navbarMenusLabel">
+      <div class="offcanvas-header px-4 pb-0">
+        <div class="offcanvas-title h5" id="navbarMenusLabel">HBS</div>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" data-bs-target="#navbarMenus" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body p-4 pt-0 p-xxl-0">
+        <hr class="d-xxl-none">
+        <ul class="navbar-nav flex-row flex-wrap align-items-center me-auto"><li class="nav-item col-6 col-xxl-auto">
+            <a class="nav-link py-2 px-0 px-xxl-2" href="https://y1bel.github.io/docs/">
+<span class="menu-icon me-1"><i class="fas fa-fw fa-file"></i></span>示例文档
+            </a>
+          </li><li class="nav-item col-6 col-xxl-auto">
+            <a class="nav-link py-2 px-0 px-xxl-2" href="https://y1bel.github.io/news/">
+<span class="menu-icon me-1"><i class="fas fa-fw fa-newspaper"></i></span>新闻
+            </a>
+          </li>
+          <li class="nav-item col-12 col-xxl-auto dropdown px-0">
+            <a href="#"
+              class="nav-link dropdown-toggle"
+              id="navbarDropdownBlog" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+<span class="menu-icon me-1"><i class="fas fa-fw fa-blog"></i></span>博客
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog" data-bs-popper="none">
+                <li><h6 class="dropdown-header">博客菜单描述</h6></li>
+              <li>
+                <a class="dropdown-item d-flex align-items-center text-wrap text-xxl-nowrap"
+                  href="https://y1bel.github.io/archives/">
+                    <span class="dropdown-item-icon me-2 p-2 rounded">
+                      <i class="fas fa-fw fa-file-archive text-primary"></i>
+                    </span>
+                  <div class="dropdown-item-content">
+                    <p class="dropdown-item-title mb-0">归档</p>
+                  </div></a>
+              </li>
+              <li>
+                <a class="dropdown-item d-flex align-items-center text-wrap text-xxl-nowrap"
+                  href="https://y1bel.github.io/series/">
+                    <span class="dropdown-item-icon me-2 p-2 rounded">
+                      <i class="fas fa-fw fa-columns"></i>
+                    </span>
+                  <div class="dropdown-item-content">
+                    <p class="dropdown-item-title mb-1">专栏</p>
+                      <p class="dropdown-item-description mb-0 text-secondary">List of series.</p>
+                  </div></a>
+              </li>
+              <li>
+                <a class="dropdown-item d-flex align-items-center text-wrap text-xxl-nowrap"
+                  href="https://y1bel.github.io/categories/">
+                    <span class="dropdown-item-icon me-2 p-2 rounded">
+                      <i class="fas fa-fw fa-folder text-success"></i>
+                    </span>
+                  <div class="dropdown-item-content">
+                    <p class="dropdown-item-title mb-1">分类</p>
+                      <p class="dropdown-item-description mb-0 text-secondary">List of categories.</p>
+                  </div></a>
+              </li>
+              <li>
+                <a class="dropdown-item d-flex align-items-center text-wrap text-xxl-nowrap"
+                  href="https://y1bel.github.io/tags/">
+                    <span class="dropdown-item-icon me-2 p-2 rounded">
+                      <i class="fas fa-fw fa-tags"></i>
+                    </span>
+                  <div class="dropdown-item-content">
+                    <p class="dropdown-item-title mb-1">标签</p>
+                      <p class="dropdown-item-description mb-0 text-secondary">List of tags.</p>
+                  </div></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        
+    <hr class="d-xxl-none">
+    <form class="search-bar ms-auto my-auto" action="/search/" novalidate>
+      <div class="input-group align-items-center">
+        <span class="btn btn-search disabled position-absolute left-0 border-0 px-1">
+          <i class="fas fa-fw fa-search fa-lg"></i>
+        </span>
+        <input
+          class="my-1 form-control border-white rounded-5 search-input bg-body"
+          name="q"
+          type="search"
+          placeholder="搜索"
+          aria-label="Search"
+          required>
+          <span class="search-shortcut position-absolute end-0 top-0 me-2">
+            <kbd class="text-dark bg-white opacity-75 rounded-3 shadow border border-primary py-1 fw-bold">/</kbd>
+          </span>
+      </div>
+    </form><hr class="d-xxl-none">
+        <ul class="navbar-nav flex-row flex-wrap align-items-center ms-md-auto">
+<li class="nav-item py-2 py-xxl-1 col-12 col-xxl-auto">
+
+
+<nav class="social-links nav justify-content-center flex-row">
+      <a class="nav-link social-link col-6 col-xxl-auto p-1" target="_blank" href="https://github.com/razonyang/hugo-theme-bootstrap" title="GitHub" rel="me">
+        <i class="fa-fw fab fa-github"
+          ></i>
+        <span class="ms-1 d-xxl-none">Github</span>
+      </a>
+      <a class="nav-link social-link col-6 col-xxl-auto p-1" target="_blank" href="https://www.patreon.com/razonyang" title="Patreon" rel="me">
+        <i class="fa-fw fab fa-patreon"
+          ></i>
+        <span class="ms-1 d-xxl-none">Patreon</span>
+      </a>
+      <a class="nav-link social-link col-6 col-xxl-auto p-1" target="_blank" href="https://www.paypal.com/paypalme/razonyang" title="PayPal" rel="me">
+        <i class="fa-fw fab fa-paypal"
+          ></i>
+        <span class="ms-1 d-xxl-none">Paypal</span>
+      </a>
+  <a class="nav-link social-link col-6 col-xxl-auto p-1" target="_blank" href="/index.xml" title="RSS" rel="me">
+    <i class="fas fa-fw fa-rss"></i>
+    <span class="ms-1 d-xxl-none">RSS</span>
+  </a>
+</nav>
+
+</li>
+<li class="nav-item py-2 py-xxl-1 col-12 col-xxl-auto">
+  <div class="vr d-none d-xxl-flex h-100 mx-xxl-2 text-white"></div>
+  <hr class="d-xxl-none my-2">
+</li>
+<li class="nav-item dropdown py-1 py-xxl-1 col-6 col-xxl-auto">
+    <a class="nav-link px-0 px-xxl-1" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fas fa-fw fa-globe"></i>
+        <span class="d-xxl-none">语言</span>
+    </a>
+    <ul class="language-dropdown-menu dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+        <li>
+        <a class="dropdown-item active" href="/">
+            简体中文
+        </a>
+        </li>
+        <li>
+        <a class="dropdown-item" href="/en/">
+            English
+        </a>
+        </li></ul>
+</li>
+<li class="nav-item py-1 col-12 col-xxl-auto">
+  <div class="vr d-none d-xxl-flex h-100 mx-xxl-2 text-white"></div>
+  <hr class="d-xxl-none my-2">
+</li>
+<li class="nav-item dropdown col-6 col-xxl-auto">
+    <a class="nav-link px-0 py-2 px-xxl-1" href="#" id="fontSizeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fas fa-fw fa-font"></i>
+        <span class="d-xxl-none">字体大小</span>
+    </a>
+    <ul class="font-size-dropdown-menu dropdown-menu dropdown-menu-end" aria-labelledby="fontSizeDropdown">
+        <li>
+            <button class="font-size-item dropdown-item" data-size="xs">
+                特小号
+            </button>
+        </li>
+        <li>
+            <button class="font-size-item dropdown-item" data-size="sm">
+                小号
+            </button>
+        </li>
+        <li>
+            <button class="font-size-item dropdown-item active" data-size="md">
+                中等
+            </button>
+        </li>
+        <li>
+            <button class="font-size-item dropdown-item" data-size="lg">
+                大号
+            </button>
+        </li>
+        <li>
+            <button class="font-size-item dropdown-item" data-size="xl">
+                特大号
+            </button>
+        </li>
+    </ul>
+</li>
+<li class="nav-item dropdown col-6 col-xxl-auto">
+    <a class="nav-link px-0 py-2 px-xxl-1" href="#" id="paletteDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fas fa-fw fa-palette"></i>
+        <span class="d-xxl-none">配色</span>
+    </a>
+    <ul class="palette-dropdown-menu dropdown-menu dropdown-menu-end px-2 row g-2" aria-labelledby="paletteDropdown">
+            <li class="col-4 my-1">
+                <a role="button" id="palette-blue" aria-label="蓝色"
+                    class="btn btn-sm w-100 palette text-bg-blue" data-palette="blue">
+                </a>
+            </li>
+            <li class="col-4 my-1">
+                <a role="button" id="palette-blue-gray" aria-label="蓝灰色"
+                    class="btn btn-sm w-100 palette text-bg-blue-gray" data-palette="blue-gray">
+                </a>
+            </li>
+            <li class="col-4 my-1">
+                <a role="button" id="palette-brown" aria-label="棕色"
+                    class="btn btn-sm w-100 palette text-bg-brown" data-palette="brown">
+                </a>
+            </li>
+            <li class="col-4 my-1">
+                <a role="button" id="palette-cyan" aria-label="青色"
+                    class="btn btn-sm w-100 palette text-bg-cyan" data-palette="cyan">
+                </a>
+            </li>
+            <li class="col-4 my-1">
+                <a role="button" id="palette-green" aria-label="绿色"
+                    class="btn btn-sm w-100 palette text-bg-green" data-palette="green">
+                </a>
+            </li>
+            <li class="col-4 my-1">
+                <a role="button" id="palette-indigo" aria-label="靛青色"
+                    class="btn btn-sm w-100 palette text-bg-indigo" data-palette="indigo">
+                </a>
+            </li>
+            <li class="col-4 my-1">
+                <a role="button" id="palette-orange" aria-label="橙色"
+                    class="btn btn-sm w-100 palette text-bg-orange" data-palette="orange">
+                </a>
+            </li>
+            <li class="col-4 my-1">
+                <a role="button" id="palette-pink" aria-label="粉色"
+                    class="btn btn-sm w-100 palette text-bg-pink" data-palette="pink">
+                </a>
+            </li>
+            <li class="col-4 my-1">
+                <a role="button" id="palette-purple" aria-label="紫色"
+                    class="btn btn-sm w-100 palette text-bg-purple" data-palette="purple">
+                </a>
+            </li>
+            <li class="col-4 my-1">
+                <a role="button" id="palette-red" aria-label="红色"
+                    class="btn btn-sm w-100 palette text-bg-red" data-palette="red">
+                </a>
+            </li>
+            <li class="col-4 my-1">
+                <a role="button" id="palette-teal" aria-label="蓝绿色"
+                    class="btn btn-sm w-100 palette text-bg-teal" data-palette="teal">
+                </a>
+            </li>
+            <li class="col-4 my-1">
+                <a role="button" id="palette-yellow" aria-label="黄色"
+                    class="btn btn-sm w-100 palette text-bg-yellow" data-palette="yellow">
+                </a>
+            </li>
+    </ul>
+</li>
+<li class="nav-item dropdown col-6 col-xxl-auto">
+    <a class="nav-link px-0 py-2 px-xxl-1" href="#" id="modeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="mode-icon fas fa-fw fa-adjust" id="modeIcon"></i>
+        <span class="d-xxl-none">模式</span>
+    </a>
+    <ul class="mode-dropdown-menu dropdown-menu dropdown-menu-end" aria-labelledby="modeDropdown">
+        <li class="mode-item" data-color-mode="light" data-icon="sun">
+            <button class="dropdown-item">
+                <i class="mode-icon fas fa-fw fa-sun"></i> 浅色
+            </button>
+        </li>
+        <li class="mode-item" data-color-mode="dark" data-icon="moon">
+            <button class="dropdown-item">
+                <i class="mode-icon fas fa-fw fa-moon"></i> 深色
+            </button>
+        </li>
+        <li class="mode-item active" data-color-mode="auto" data-icon="adjust">
+            <button class="dropdown-item">
+                <i class="mode-icon fas fa-fw fa-adjust"></i> 自动
+            </button>
+        </li>
+    </ul>
+</li>
+        </ul>
+      </div>
+    </div>
+    <div class="d-flex">
+      <button class="navbar-toggler order-5 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarMenus"
+        aria-controls="navbarMenus" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-ellipsis-h"></i>
+      </button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+    <main class="container">
+      <div class="row content"><noscript>
+    <div class="alert alert-danger" role="alert">你的浏览器不支持 JavaScript。</div>
+</noscript>
+
+<div class="col-xxl-8">
+  <div class="container"><nav class="row card component" aria-label="breadcrumb">
+  <div class="card-body pb-0">
+    <ol class="hbs-breadcrumb breadcrumb flex-nowrap"><li class="breadcrumb-item text-surface"><a href="/">主页</a></li><li class="breadcrumb-item text-surface"><a href="/posts/">Posts</a></li><li class="breadcrumb-item active">Hugo&#43;GitHub Pages部署个人博客</li></ol>
+  </div>
+</nav><div class="post-panel-wrapper position-relative d-flex justify-content-center">
+  <div class="d-flex flex-row justify-content-center rounded-5 border post-panel position-fixed px-3 py-1 surface shadow-1">
+    
+    
+
+    <a class="action btn-reward" role="button" data-bs-toggle="modal" data-bs-target="#rewardModal" title="打赏">
+  <i class="fas fa-fw fa-coffee"></i>
+</a>
+    
+    
+  <a class="action action-toc d-none d-xxl-block" href="#postTOC" role="button" title="目录">
+    <i class="fas fa-fw fa-list-alt"></i>
+  </a>
+<a class="action action-toc d-block d-xxl-none" href="#post-toc-container" role="button" title="目录">
+  <i class="fas fa-fw fa-list-alt"></i>
+</a>
+    <a class="action action-copyright" href="#post-copyright" role="button" aria-label="Copyright" title="版权">
+  <i class="fas fa-fw fa-copyright"></i>
+</a>
+    <a class="action action-post-comments" href="#post-comments" role="button" aria-label="Comments" title="评论">
+  <i class="fas fa-fw fa-comments"></i>
+</a>
+    
+<a id="sidebarToggler" class="action action-sidebar-toggler d-none d-xxl-block" role="button" title="切换侧边栏">
+  <i class="fas fa-fw fa-expand-alt" data-fa-transform="rotate-45"></i>
+</a>
+
+    
+  </div>
+</div><article class="row card component mb-4 post">
+  <div class="card-header ">
+    <h1 class="card-title post-title my-2">Hugo&#43;GitHub Pages部署个人博客</h1>
+  </div>
+  <div class="card-body"><div class="post-meta mb-3">
+  <span class="post-date me-1 mb-1" title="创建于 2024-05-12 15:54:35 &#43;0800 CST。">2024年5月12日</span><span class="post-reading-time me-1 mb-1">3 分钟阅读</span><a href="/authors/yibel/" class="btn btn-sm btn-secondary mb-1 me-2 py-0 pe-1 post-taxonomy post-taxonomy-sm post-author">
+      <i class="fas fa-fw fa-user me-1"></i>Yibel</a><a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="btn btn-sm btn-secondary mb-1 me-2 py-0 pe-1 post-taxonomy post-taxonomy-sm post-category">
+      <i class="fas fa-fw fa-folder me-1"></i>博客搭建</a><a href="/tags/hugo/" class="btn btn-sm btn-secondary mb-1 me-2 py-0 pe-1 post-taxonomy post-taxonomy-sm post-tag">Hugo</a>
+</div>
+<picture class="d-flex justify-content-center"><source srcset="/posts/newsitebyhugo/featured-image_hu8f52bf928b3e518c539209a998020db1_15491_0x270_resize_box_3.png" type="image/png" media="(max-width: 576px)" width="540" height="270">
+      <img class="post-featured-img h-auto w-auto mb-3" alt="Hugo&#43;GitHub Pages部署个人博客" src="/posts/newsitebyhugo/featured-image_hu8f52bf928b3e518c539209a998020db1_15491_0x480_resize_box_3.png" width="960" height="480" data-src="/posts/newsitebyhugo/featured-image.png"/>
+    </picture>
+      <p class="lead mb-3 text-body-emphasis">在Windows10上利用Hugo搭建个人博客的基本步骤，包含从安装到部署的全部过程，以及搭建过程中遇到的一些问题及解决方法。</p>
+<div class="mt-2 mb-3 d-block d-xxl-none">
+    <h2 class="text-surface mb-3">目录</h2>
+    <div id="post-toc-container">
+        </div>
+    <hr class="text-secondary">
+</div><div class="post-content mb-3" data-bs-spy="scroll" data-bs-target="#TableOfContents" tabindex="0">
+        <div id="post-content-body">
+<h2 id="使用hugo和github-pages部署个人博客" data-numberify>使用Hugo和GitHub Pages部署个人博客<a class="anchor ms-1" href="#使用hugo和github-pages部署个人博客"></a></h2>
+
+<h3 id="安装hugo" data-numberify>安装Hugo<a class="anchor ms-1" href="#安装hugo"></a></h3>
+<ol>
+<li><a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank" rel="noopener noreferrer">安装 Git<i class="fas fa-external-link-square-alt ms-1"></i></a></li>
+<li><a href="https://go.dev/dl/" target="_blank" rel="noopener noreferrer">安装 Go<i class="fas fa-external-link-square-alt ms-1"></i></a></li>
+<li><a href="https://github.com/gohugoio/hugo/releases/tag/v0.125.7" target="_blank" rel="noopener noreferrer">安装 Hugo<i class="fas fa-external-link-square-alt ms-1"></i></a> 选择extended版</li>
+</ol>
+<p>windows平台：解压后，在文件夹中新建 <code>bin</code> 文件夹，将 <code>hugo.exe</code> 文件放到 <code>bin</code> 下，然后将该文件的路径添加到环境变量 <code>path</code> 中。在命令行中输入 <code>hugo version</code> 检查是否安装成功</p>
+<p>官方安装文档 ：(<a href="https://gohugo.io/categories/installation/" target="_blank" rel="noopener noreferrer">https://gohugo.io/categories/installation/<i class="fas fa-external-link-square-alt ms-1"></i></a>)</p>
+
+<h3 id="创建site" data-numberify>创建Site<a class="anchor ms-1" href="#创建site"></a></h3>
+<p>在某个文件夹下（我选择的E盘）右键打开Git Bash，执行</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">hugo new site blog
+</span></span></code></pre></div><p>然后E盘中会生成一个 <code>blog</code> 文件夹，进入其中后进行后续操作</p>
+
+<h3 id="安装主题-hugo-theme-stack" data-numberify>安装主题 hugo-theme-stack<a class="anchor ms-1" href="#安装主题-hugo-theme-stack"></a></h3>
+<ol>
+<li>将默认配置文件 <code>hugo.toml</code> 重命名为 <code>hugo_backup.toml</code></li>
+<li>右键打开 Git Bash 执行以下命令</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">git init
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">#下载主题
+</span></span><span class="line"><span class="cl">git submodule add https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack
+</span></span></code></pre></div><ol start="3">
+<li>在 /themes/hugo-theme-stack 中找到 archetypes 文件夹，拷贝后替换 /blog 下的 archetypes 文件夹</li>
+<li>在 /themes/hugo-theme-stack/exampleSite 中将 content 文件夹和 hugo.yaml 文件拷贝到 /blog 下</li>
+</ol>
+<p>hugo.yaml 配置参考<a href="https://stack.jimmycai.com/config/" target="_blank" rel="noopener noreferrer">官方配置文档<i class="fas fa-external-link-square-alt ms-1"></i></a></p>
+
+<h3 id="启动hugo服务" data-numberify>启动Hugo服务<a class="anchor ms-1" href="#启动hugo服务"></a></h3>
+<p>执行命令</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">hugo server
+</span></span></code></pre></div><p>启动服务后可在 (http://localhost:1313/) 访问个人站点。按 Ctrl + C 停止 Hugo 服务器。</p>
+
+<h3 id="新建文章" data-numberify>新建文章<a class="anchor ms-1" href="#新建文章"></a></h3>
+<p>执行命令</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl"> hugo new post/test.md
+</span></span></code></pre></div><p>可在 /content/post 下找到对应md文件，打开文件进行编辑，建议将文件默认草稿关闭 <code>draft: false</code></p>
+
+<h3 id="生成静态页面" data-numberify>生成静态页面<a class="anchor ms-1" href="#生成静态页面"></a></h3>
+<p>执行命令</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">hugo
+</span></span></code></pre></div><p>会在/public下生成的静态文件，后续将该文件夹部署到github</p>
+
+<h3 id="远程部署" data-numberify>远程部署<a class="anchor ms-1" href="#远程部署"></a></h3>
+
+<h4 id="在github中创建仓库" data-numberify>在Github中创建仓库<a class="anchor ms-1" href="#在github中创建仓库"></a></h4>
+<p>创建一个仓库，仓库的名字格式为 {username}.github.io ，将 {username} 替换为你的github用户名</p>
+
+<h4 id="关联github仓库" data-numberify>关联Github仓库<a class="anchor ms-1" href="#关联github仓库"></a></h4>
+<ol>
+<li>进入 /public 右键打开Git Bash，执行以下命令</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">git init
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">#添加当前目录下所有文件到暂存区
+</span></span><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">#将暂存区内容添加到本地仓库，-m 用于备注提交信息
+</span></span><span class="line"><span class="cl">git commit -m <span class="s2">&#34;first commit&#34;</span>
+</span></span></code></pre></div><ol start="2">
+<li>复制创建的{username}.github.io仓库的SSH地址：Code -&gt; SSH，执行命令</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">#添加远程仓库 origin 为别名
+</span></span><span class="line"><span class="cl">git remote add origin [ssh地址]
+</span></span></code></pre></div><ol start="3">
+<li>将本地库的文件推送到远程仓库的master分支，第一次需要加 <code>-u</code></li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">git push -u origin master
+</span></span></code></pre></div>
+<h4 id="启动github-pages" data-numberify>启动GitHub Pages<a class="anchor ms-1" href="#启动github-pages"></a></h4>
+<p>进入Github对应仓库中，点击Settings -&gt; Pages，设置 Branch 为 master 后点击 save 保存</p>
+<p>此时就可以通过https://{username}.github.io/访问站点了</p>
+<p>通过相同操作可以将 /blog 文件夹及其下层内容托管到Github的blog仓库</p>
+
+<h3 id="自动部署" data-numberify>自动部署<a class="anchor ms-1" href="#自动部署"></a></h3>
+<p>将部署操作写为脚本 <code>deploy.sh</code>，放到 /blog 下，写完博客后可双击运行自动进行部署</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> -e <span class="s2">&#34;\033[0;32mDeploying updates to GitHub...\033[0m&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Build the project.</span>
+</span></span><span class="line"><span class="cl">hugo <span class="c1"># if using a theme, replace with `hugo -t &lt;YOURTHEME&gt;`</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Go To Public folder</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> public
+</span></span><span class="line"><span class="cl"><span class="c1"># Add changes to git.</span>
+</span></span><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Commit changes.</span>
+</span></span><span class="line"><span class="cl"><span class="nv">msg</span><span class="o">=</span><span class="s2">&#34;rebuilding site `date`&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[</span> <span class="nv">$#</span> -eq <span class="m">1</span> <span class="o">]</span>
+</span></span><span class="line"><span class="cl">  <span class="k">then</span> <span class="nv">msg</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="cl">git commit -m <span class="s2">&#34;</span><span class="nv">$msg</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Push source and build repos.</span>
+</span></span><span class="line"><span class="cl">git push origin master
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Come Back up to the Project Root</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> ..
+</span></span></code></pre></div>
+<h3 id="遇到的问题及解决方法" data-numberify>遇到的问题及解决方法<a class="anchor ms-1" href="#遇到的问题及解决方法"></a></h3>
+<ul>
+<li>
+<p><a href="https://zhuanlan.zhihu.com/p/636418854" target="_blank" rel="noopener noreferrer">解决 Github port 443 : Timed out<i class="fas fa-external-link-square-alt ms-1"></i></a></p>
+</li>
+<li>
+<p><a href="https://www.jianshu.com/p/c3aac5024877" target="_blank" rel="noopener noreferrer">解决git-ssh: connect to host github.com port 22: Connection timed out<i class="fas fa-external-link-square-alt ms-1"></i></a></p>
+</li>
+</ul>
+
+<h3 id="参考" data-numberify>参考<a class="anchor ms-1" href="#参考"></a></h3>
+<ul>
+<li>
+<p><a href="https://jeshs.github.io/2019/01/hugo%E9%83%A8%E7%BD%B2%E5%88%B0github/" target="_blank" rel="noopener noreferrer">Hugo部署到Github<i class="fas fa-external-link-square-alt ms-1"></i></a></p>
+</li>
+<li>
+<p><a href="https://cloud.tencent.com/developer/article/1932807" target="_blank" rel="noopener noreferrer">Hugo系列(1) - 简单搭建教程与远程部署<i class="fas fa-external-link-square-alt ms-1"></i></a></p>
+</li>
+<li>
+<p><a href="https://blog.linsnow.cn/p/deploy-hugo/" target="_blank" rel="noopener noreferrer">利用Github Page和Github Action部署你的Hugo博客<i class="fas fa-external-link-square-alt ms-1"></i></a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="modal fade" id="rewardModal" tabindex="-1" aria-labelledby="rewardModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content surface">
+      <div class="modal-header">
+        <h5 class="modal-title text-surface" id="rewardModalLabel"><i class="fas fa-fw fa-coffee me-1"></i>打赏</h5>
+        <a href="#" data-bs-dismiss="modal" class="btn-close" aria-label="Close"></a>
+      </div>
+      <div class="modal-body">
+        <ul class="nav nav-tabs mb-3" role="tablist"><li class="nav-item text-nowrap" role="presentation">
+            <a class="nav-link active" id="reward-alipay-tab" data-bs-toggle="tab" href="#reward-alipay" role="tab" aria-controls="reward-alipay" aria-selected="true">
+              <i class="fab fa-fw fa-alipay me-1"></i>支付宝
+            </a>
+          </li><li class="nav-item text-nowrap" role="presentation">
+            <a class="nav-link" id="reward-wechat-tab" data-bs-toggle="tab" href="#reward-wechat" role="tab" aria-controls="reward-wechat" aria-selected="true">
+              <i class="fab fa-fw fa-weixin me-1"></i>微信
+            </a>
+          </li></ul>
+        <div class="tab-content" id="rewardTabContent"><div class="tab-pane fade post-reward-content text-center show active" id="reward-alipay" role="tabpanel" aria-labelledby="reward-alipay-tab">
+            <img class="img-fluid post-reward-img" src="https://y1bel.github.io/images/reward/alipay.png" loading="lazy" data-viewer-invisible />
+          </div><div class="tab-pane fade post-reward-content text-center show" id="reward-wechat" role="tabpanel" aria-labelledby="reward-wechat-tab">
+            <img class="img-fluid post-reward-img" src="https://y1bel.github.io/images/reward/wechat.png" loading="lazy" data-viewer-invisible />
+          </div></div>
+      </div>
+    </div>
+  </div>
+</div></div></article><div class="post-copyright mb-3 row card component" id="post-copyright">
+    <div class="card-header">
+        <h2 class="card-title fs-4 my-2 text-surface">版权</h2>
+    </div>
+    <div class="card-body"><a class="d-flex align-items-center flex-column" target="_blank" rel="license noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh">
+  <span><i class="fab fa-fw fa-2x fa-creative-commons"></i><i class="fab fa-fw fa-2x fa-creative-commons-by"></i><i class="fab fa-fw fa-2x fa-creative-commons-nc"></i><i class="fab fa-fw fa-2x fa-creative-commons-nd"></i></span>
+  CC BY-NC-ND 4.0 
+</a>
+
+
+    </div>
+</div><div class="card component row post-comments" id="post-comments">
+  <div class="card-header">
+    <h2 class="card-title my-2 fs-4 text-surface">评论</h2>
+  </div>
+  <div class="card-body">
+<div class="giscus"></div>
+
+
+
+</div>
+</div></div>
+</div>
+<aside class="col-xxl-4 sidebar d-flex">
+  <div class="container d-flex flex-column">
+    
+    
+<div class="accordion profile">
+  <div class="accordion-item card row text-center component">
+    <div class="accordion-header card-header border-0" id="profile-header">
+      <a
+        class="accordion-button d-lg-none mb-2 shadow-none p-0 bg-transparent text-surface"
+        role="button" data-bs-toggle="collapse" href="#profile" aria-expanded="true" aria-controls="profile">
+        Profile
+      </a>
+    </div>
+    <div class="card-body collapse accordion-collapse accordion-body d-lg-block show" id="profile" aria-labelledby="profile-header">
+      <div class="col-12 d-flex align-items-center justify-content-center"><picture><img class="profile-avatar rounded-circle " alt="Yibel" src="https://y1bel.github.io/images/profile.webp?v=2ea6b19a95403790fa4b0c2264759edf" loading="lazy" data-viewer-invisible width="400" height="400" />
+</picture>
+</div>
+      <div class="col-12 profile-meta"><div class="profile-name fw-fold fs-lg">Yibel</div><div class="profile-bio">如果我们无法以光速✨前行</div><div class="profile-location"><i class="fas fa-fw fa-map-marker-alt"></i>Earth</div><a class="profile-about text-primary" href="/about/"><i class="fas fa-fw fa-user"></i>About</a><a class="profile-contact text-primary" href="/contact/"><i class="fas fa-fw fa-question-circle"></i>联系我们</a></div>
+
+
+<nav class="social-links nav justify-content-center mt-1 justify-content-around">
+      <a class="nav-link social-link" target="_blank" href="https://github.com/y1bel" title="GitHub" rel="me">
+        <i class="fa-fw fa-2x fab fa-github"
+          ></i>
+      </a>
+      <a class="nav-link social-link" target="_blank" href="https://www.patreon.com/%25!s%28%3cnil%3e%29" title="Patreon" rel="me">
+        <i class="fa-fw fa-2x fab fa-patreon"
+           style="color: #ff424d;"></i>
+      </a>
+      <a class="nav-link social-link" target="_blank" href="https://www.paypal.com/paypalme/%25!s%28%3cnil%3e%29" title="PayPal" rel="me">
+        <i class="fa-fw fa-2x fab fa-paypal"
+          ></i>
+      </a>
+      <a class="nav-link social-link" target="_blank" href="https://twitter.com/%25!s%28%3cnil%3e%29" title="推特" rel="me">
+        <i class="fa-fw fa-2x fab fa-twitter"
+           style="color: #1d9bf0;"></i>
+      </a>
+  <a class="nav-link social-link" target="_blank" href="/archives/index.xml" title="RSS" rel="me">
+    <i class="fas fa-fw fa-2x fa-rss" style="color: #ea6221;"></i>
+  </a>
+</nav>
+</div>
+  </div>
+</div>
+
+
+<div class="accordion taxonomies-toggle">
+    <div class="row card component accordion-item">
+        <div class="accordion-header card-header border-0">
+            <a
+                class="accordion-button d-lg-none mb-1 shadow-none p-0 bg-transparent"
+                role="button" data-bs-toggle="collapse" href="#taxonomies-toggle" aria-expanded="true" aria-controls="taxonomies-toggle">
+                Taxonomies
+            </a>
+        </div>
+        <div class="card-body collapse accordion-collapse accordion-body d-lg-block show" id="taxonomies-toggle">
+            <ul class="nav nav-pills nav-fill" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="taxonomySeriesTab" data-bs-toggle="tab" data-bs-target="#taxonomySeries" 
+                            type="button" role="tab" aria-controls="taxonomySeries" aria-selected="true">
+                            专栏
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="taxonomyCategoriesTab" data-bs-toggle="tab" data-bs-target="#taxonomyCategories" 
+                            type="button" role="tab" aria-controls="taxonomyCategories" aria-selected="true">
+                            分类
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="taxonomyTagsTab" data-bs-toggle="tab" data-bs-target="#taxonomyTags" 
+                            type="button" role="tab" aria-controls="taxonomyTags" aria-selected="true">
+                            标签
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="taxonomyAuthorsTab" data-bs-toggle="tab" data-bs-target="#taxonomyAuthors" 
+                            type="button" role="tab" aria-controls="taxonomyAuthors" aria-selected="true">
+                            作者
+                        </button>
+                    </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="taxonomyArchivesTab" data-bs-toggle="tab" data-bs-target="#taxonomyArchives" 
+                        type="button" role="tab" aria-controls="taxonomyArchives" aria-selected="true">
+                        归档
+                    </button>
+                </li>
+            </ul>
+            
+            <div class="tab-content mt-3">
+                    <div class="tab-pane active" id="taxonomySeries" role="tabpanel" aria-labelledby="taxonomySeriesTab" tabindex="0">
+                        <a href="/series/guide/" class="btn btn-sm btn-secondary post-taxonomy ps-3 post-series me-2 mb-2" title="Guide">
+                            Guide
+                            <span class="badge badge-sm text-secondary bg-white ms-1">4</span>
+                        </a>
+                        <a href="/series/news/" class="btn btn-sm btn-secondary post-taxonomy ps-3 post-series me-2 mb-2" title="News">
+                            News
+                            <span class="badge badge-sm text-secondary bg-white ms-1">1</span>
+                        </a>
+                    </div>
+                    <div class="tab-pane" id="taxonomyCategories" role="tabpanel" aria-labelledby="taxonomyCategoriesTab" tabindex="0">
+                        <a href="/categories/installation/" class="btn btn-sm btn-secondary post-taxonomy ps-3 post-category me-2 mb-2" title="Installation">
+                            Installation
+                            <span class="badge badge-sm text-secondary bg-white ms-1">3</span>
+                        </a>
+                        <a href="/categories/image/" class="btn btn-sm btn-secondary post-taxonomy ps-3 post-category me-2 mb-2" title="Image">
+                            Image
+                            <span class="badge badge-sm text-secondary bg-white ms-1">1</span>
+                        </a>
+                        <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="btn btn-sm btn-secondary post-taxonomy ps-3 post-category me-2 mb-2" title="博客搭建">
+                            博客搭建
+                            <span class="badge badge-sm text-secondary bg-white ms-1">1</span>
+                        </a>
+                    </div>
+                    <div class="tab-pane" id="taxonomyTags" role="tabpanel" aria-labelledby="taxonomyTagsTab" tabindex="0">
+                        <a href="/tags/linux/" class="btn btn-sm btn-secondary post-taxonomy ps-3 post-tag me-2 mb-2" title="Linux">
+                            Linux
+                            <span class="badge badge-sm text-secondary bg-white ms-1">2</span>
+                        </a>
+                        <a href="/tags/arch-linux/" class="btn btn-sm btn-secondary post-taxonomy ps-3 post-tag me-2 mb-2" title="Arch Linux">
+                            Arch Linux
+                            <span class="badge badge-sm text-secondary bg-white ms-1">1</span>
+                        </a>
+                        <a href="/tags/crop/" class="btn btn-sm btn-secondary post-taxonomy ps-3 post-tag me-2 mb-2" title="Crop">
+                            Crop
+                            <span class="badge badge-sm text-secondary bg-white ms-1">1</span>
+                        </a>
+                        <a href="/tags/fill/" class="btn btn-sm btn-secondary post-taxonomy ps-3 post-tag me-2 mb-2" title="Fill">
+                            Fill
+                            <span class="badge badge-sm text-secondary bg-white ms-1">1</span>
+                        </a>
+                        <a href="/tags/filters/" class="btn btn-sm btn-secondary post-taxonomy ps-3 post-tag me-2 mb-2" title="Filters">
+                            Filters
+                            <span class="badge badge-sm text-secondary bg-white ms-1">1</span>
+                        </a>
+                        <a href="/tags/fit/" class="btn btn-sm btn-secondary post-taxonomy ps-3 post-tag me-2 mb-2" title="Fit">
+                            Fit
+                            <span class="badge badge-sm text-secondary bg-white ms-1">1</span>
+                        </a>
+                        <a href="/tags/hugo/" class="btn btn-sm btn-secondary post-taxonomy ps-3 post-tag me-2 mb-2" title="Hugo">
+                            Hugo
+                            <span class="badge badge-sm text-secondary bg-white ms-1">1</span>
+                        </a>
+                        <a href="/tags/readme/" class="btn btn-sm btn-secondary post-taxonomy ps-3 post-tag me-2 mb-2" title="README">
+                            README
+                            <span class="badge badge-sm text-secondary bg-white ms-1">1</span>
+                        </a>
+                        <a href="/tags/ubuntu/" class="btn btn-sm btn-secondary post-taxonomy ps-3 post-tag me-2 mb-2" title="Ubuntu">
+                            Ubuntu
+                            <span class="badge badge-sm text-secondary bg-white ms-1">1</span>
+                        </a>
+                        <a href="/tags/windows/" class="btn btn-sm btn-secondary post-taxonomy ps-3 post-tag me-2 mb-2" title="Windows">
+                            Windows
+                            <span class="badge badge-sm text-secondary bg-white ms-1">1</span>
+                        </a>
+                    </div>
+                    <div class="tab-pane" id="taxonomyAuthors" role="tabpanel" aria-labelledby="taxonomyAuthorsTab" tabindex="0">
+                        <a href="/authors/razonyang/" class="btn btn-sm btn-secondary post-taxonomy ps-3 post-author me-2 mb-2" title="Razon Yang">
+                            Razon Yang
+                            <span class="badge badge-sm text-secondary bg-white ms-1">1</span>
+                        </a>
+                        <a href="/authors/yibel/" class="btn btn-sm btn-secondary post-taxonomy ps-3 post-author me-2 mb-2" title="Yibel">
+                            Yibel
+                            <span class="badge badge-sm text-secondary bg-white ms-1">1</span>
+                        </a>
+                    </div>
+                <div class="tab-pane" id="taxonomyArchives" role="tabpanel" aria-labelledby="taxonomyArchivesTab" tabindex="0">
+
+    <a href="" class="btn btn-sm btn-secondary post-taxonomy ps-3 me-2 mb-2" title="2024">
+    2024 <span class="badge badge-sm text-secondary bg-white ms-1">1</span>
+    </a>
+
+    <a href="/archives/2022/" class="btn btn-sm btn-secondary post-taxonomy ps-3 me-2 mb-2" title="2022">
+    2022 <span class="badge badge-sm text-secondary bg-white ms-1">2</span>
+    </a>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="accordion posts-toggle">
+      <div class="row card component accordion-item">
+        <div class="accordion-header card-header border-0">
+          <a
+            class="accordion-button d-lg-none mb-1 shadow-none p-0 bg-transparent"
+            role="button"
+            data-bs-toggle="collapse"
+            href="#posts-toggle"
+            aria-expanded="true"
+            aria-controls="posts-toggle">
+            文章
+          </a>
+        </div>
+        <div
+          class="card-body collapse accordion-collapse accordion-body d-lg-block show"
+          id="posts-toggle">
+          <ul class="nav nav-pills nav-fill" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="featured-posts-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#featured-posts"
+                  type="button"
+                  role="tab"
+                  aria-controls="featured-posts"
+                  aria-selected="true">
+                  精选文章
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="recent-posts-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#recent-posts"
+                  type="button"
+                  role="tab"
+                  aria-controls="recent-posts"
+                  aria-selected="true">
+                  最近文章
+                </button>
+              </li>
+          </ul>
+
+          <div class="tab-content mt-3">
+              <div
+                class="tab-pane active"
+                id="featured-posts"
+                role="tabpanel"
+                aria-labelledby="featured-posts-tab"
+                tabindex="0">
+                <ul class="post-list list-unstyled ms-1">
+                    <li class="mb-2">
+  <div class="d-flex">
+      <div
+        class="flex-shrink-0 d-flex justify-content-center align-items-center"
+        style="max-width: 100px"><picture>
+      <source srcset="/news/2022/07/more-image-processing-methods/featured-sample_huc6bcc14d597e300fd9ab4aae536c68a5_498412_500x0_resize_q75_h2_box_2.webp" media="(max-width: 576px)" height="333" width="500">
+      <img class="img-fluid" height="120" width="180" alt="featured-sample.webp" src="/news/2022/07/more-image-processing-methods/featured-sample_huc6bcc14d597e300fd9ab4aae536c68a5_498412_180x0_resize_q75_h2_box_2.webp" data-src="/news/2022/07/more-image-processing-methods/featured-sample.webp" loading="lazy"/>
+    </picture>
+      </div>
+    <div
+      class="flex-grow-1 d-flex flex-column h-auto justify-content-center ms-3">
+      <a class="post-title" href="/news/2022/07/more-image-processing-methods/">
+        More Image Processing Methods
+      </a>
+      <div class="post-meta mt-2">
+        <span class="post-date">
+          2022年7月8日
+        </span>
+      </div>
+    </div>
+  </div>
+                    </li>
+                </ul>
+              </div>
+              <div
+                class="tab-pane"
+                id="recent-posts"
+                role="tabpanel"
+                aria-labelledby="recent-posts-tab"
+                tabindex="0">
+                <ul class="post-list list-unstyled ms-1">
+                    <li class="mb-2">
+  <div class="d-flex">
+      <div
+        class="flex-shrink-0 d-flex justify-content-center align-items-center"
+        style="max-width: 100px"><picture>
+      <source srcset="/posts/newsitebyhugo/featured-image_hu8f52bf928b3e518c539209a998020db1_15491_500x0_resize_box_3.png" media="(max-width: 576px)" height="250" width="500">
+      <img class="img-fluid" height="90" width="180" alt="featured-image.png" src="/posts/newsitebyhugo/featured-image_hu8f52bf928b3e518c539209a998020db1_15491_180x0_resize_box_3.png" data-src="/posts/newsitebyhugo/featured-image.png" loading="lazy"/>
+    </picture>
+      </div>
+    <div
+      class="flex-grow-1 d-flex flex-column h-auto justify-content-center ms-3">
+      <a class="post-title" href="/posts/newsitebyhugo/">
+        Hugo&#43;GitHub Pages部署个人博客
+      </a>
+      <div class="post-meta mt-2">
+        <span class="post-date">
+          2024年5月12日
+        </span>
+      </div>
+    </div>
+  </div>
+                    </li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="accordion post-toc d-none d-lg-block">
+  <div class="accordion-item row mb-4 card component" id="postTOC">
+    <div class="card-header accordion-header">
+      <h2 class="card-title fs-4 my-2 text-surface d-none d-lg-block">目录</h2>
+      <a class="accordion-button d-lg-none mb-1 collapsed shadow-none p-0 bg-transparent" role="button" data-bs-toggle="collapse" href="#post-toc" aria-expanded="false" aria-controls="post-toc">
+        目录
+      </a>
+    </div>
+    <div class="card-body collapse accordion-collapse accordion-body d-lg-block" id="post-toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#使用hugo和github-pages部署个人博客">使用Hugo和GitHub Pages部署个人博客</a>
+      <ul>
+        <li><a href="#安装hugo">安装Hugo</a></li>
+        <li><a href="#创建site">创建Site</a></li>
+        <li><a href="#安装主题-hugo-theme-stack">安装主题 hugo-theme-stack</a></li>
+        <li><a href="#启动hugo服务">启动Hugo服务</a></li>
+        <li><a href="#新建文章">新建文章</a></li>
+        <li><a href="#生成静态页面">生成静态页面</a></li>
+        <li><a href="#远程部署">远程部署</a></li>
+        <li><a href="#自动部署">自动部署</a></li>
+        <li><a href="#遇到的问题及解决方法">遇到的问题及解决方法</a></li>
+        <li><a href="#参考">参考</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+    
+  </div>
+</aside>
+
+      </div>
+    </main><footer class="footer mt-auto py-3 text-center container"><div class="offcanvas offcanvas-bottom h-auto" tabindex="-1" id="offcanvasActionsPanel"
+  aria-labelledby="offcanvasActionsPanelLabel">
+  <div class="offcanvas-header">
+    <div class="offcanvas-title h5" id="offcanvasActionsPanelLabel">
+      <i class="fas fa-fw fa-th-large me-1"></i>
+      操作
+    </div>
+    <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas" data-bs-target="offcanvasActionsPanel" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body mt-2"><div class="social-share mb-4 d-flex overflow-auto">
+      <a class="btn-social-share d-flex flex-column align-items-center me-3" rel="noopener noreferrer" aria-label="Twitter Share Button"
+      target="_blank" href="https://twitter.com/intent/tweet?title=404%20Page%20not%20found&url=https%3a%2f%2fy1bel.github.io%2f404.html">
+        <i class="fab fa-2x fa-fw fa-twitter mb-2"></i> Twitter
+      </a>
+      <a class="btn-social-share d-flex flex-column align-items-center me-3" rel="noopener noreferrer" aria-label="Facebook Share Button"
+        target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fy1bel.github.io%2f404.html">
+        <i class="fab fa-2x fa-fw fa-facebook-f mb-2"></i> Facebook
+      </a>
+    </div>
+    <hr class="mb-4"><div class="actions d-flex overflow-auto align-items-center">
+      <a role="button" class="action action-go-back d-flex flex-column align-items-center me-3" href="javascript: window.history.back();">
+        <span class="action-icon mb-2"><i class="fas fa-2x fa-chevron-circle-down" data-fa-transform="rotate-90"></i></span> 返回
+      </a>
+      <a role="button" class="action action-reload-page d-flex flex-column align-items-center me-3">
+        <span class="action-icon mb-2"><i class="fas fa-2x fa-redo-alt"></i></span> 刷新
+      </a>
+      <a role="button" class="action action-copy-url d-flex flex-column align-items-center me-3">
+        <span class="action-icon mb-2"><i class="fas fa-2x fa-link"></i></span> 复制链接
+      </a>
+    </div>
+  </div>
+</div><div class="row text-center">
+  <div class="col-12 mt-2">
+    <p class="mb-2"></p>
+    <p class="text-secondary mb-2"><small></small></p><div class="copyright mb-2 text-secondary">
+  <small>© 2024-2024 Yibel. All Rights Reserved.
+</small>
+</div>
+<div class="powered-by mb-2 text-secondary">
+  <small>
+    Build with ❤️ from the <a class="text-primary" href="https://gohugo.io" target="_blank" rel="noopener noreferrer">Hugo</a> and the <a class="text-primary" href="https://github.com/razonyang/hugo-theme-bootstrap" target="_blank" rel="noopener noreferrer">HBS</a> theme.
+  </small>
+</div>
+
+
+<nav class="social-links nav justify-content-center mb-2 mt-3">
+      <a class="nav-link social-link p-0 me-1 mb-2" target="_blank" href="https://space.bilibili.com/yourbilibiliuserid" title="哔哩哔哩" rel="me">
+        <i class="fa-fw fa-2x fab fa-bilibili"
+           style="color: #fb7299;"></i>
+      </a>
+      <a class="nav-link social-link p-0 me-1 mb-2" target="_blank" href="https://bitbucket.org/yourbitbucketworkspaceid" title="Bitbucket" rel="me">
+        <i class="fa-fw fa-2x fab fa-bitbucket"
+           style="color: #0e65df;"></i>
+      </a>
+      <a class="nav-link social-link p-0 me-1 mb-2" target="_blank" href="https://discord.com/invite/yourdiscordinvitecode" title="Discord" rel="me">
+        <i class="fa-fw fa-2x fab fa-discord"
+          ></i>
+      </a>
+      <a class="nav-link social-link p-0 me-1 mb-2" target="_blank" href="https://yourforum.tld" title="Discourse" rel="me">
+        <i class="fa-fw fa-2x fab fa-discourse"
+          ></i>
+      </a>
+      <a class="nav-link social-link p-0 me-1 mb-2" target="_blank" href="https://hub.docker.com/u/yourdockerhubusername" title="Docker Hub" rel="me">
+        <i class="fa-fw fa-2x fab fa-docker"
+          ></i>
+      </a>
+    <a class="nav-link social-link p-0 me-1 mb-2" href="mailto:user@domain.tld" title="电子邮箱">
+      <i class="fas fa-fw fa-2x fa-envelope" style="color: #0963ac;"></i>
+    </a>
+      <a class="nav-link social-link p-0 me-1 mb-2" target="_blank" href="https://facebook.com/yourfacebookusername" title="脸书" rel="me">
+        <i class="fa-fw fa-2x fab fa-facebook-f"
+           style="color: #1877f2;"></i>
+      </a>
+      <a class="nav-link social-link p-0 me-1 mb-2" target="_blank" href="https://facebook.com/groups/yourfacebookgroupname" title="脸书群组" rel="me">
+        <i class="fa-fw fa-2x fab fa-facebook-square"
+           style="color: #1877f2;"></i>
+      </a>
+      <a class="nav-link social-link p-0 me-1 mb-2" target="_blank" href="https://github.com/razonyang/hugo-theme-bootstrap" title="GitHub" rel="me">
+        <i class="fa-fw fa-2x fab fa-github"
+          ></i>
+      </a>
+      <a class="nav-link social-link p-0 me-1 mb-2" target="_blank" href="https://gitlab.com/yourgitlabusername" title="GitLab" rel="me">
+        <i class="fa-fw fa-2x fab fa-gitlab"
+           style="color: #e24329;"></i>
+      </a>
+      <a class="nav-link social-link p-0 me-1 mb-2" target="_blank" href="https://www.instagram.com/yourinstagramusername" title="Instagram" rel="me">
+        <i class="fa-fw fa-2x fab fa-instagram"
+           style="color: #c03957;"></i>
+      </a>
+      <a class="nav-link social-link p-0 me-1 mb-2" target="_blank" href="https://kaggle.com/yourkaggleusername" title="Kaggle" rel="me">
+        <i class="fa-fw fa-2x fab fa-kaggle"
+           style="color: #3cc6ff;"></i>
+      </a>
+      <a class="nav-link social-link p-0 me-1 mb-2" target="_blank" href="https://www.last.fm/user/yourlastfmusername" title="Last.fm" rel="me">
+        <i class="fa-fw fa-2x fab fa-lastfm"
+           style="color: #ba0000;"></i>
+      </a>
+      <a class="nav-link social-link p-0 me-1 mb-2" target="_blank" href="https://liberapay.com/yourliberapayaccount" title="Liberapay" rel="me">
+        <i class="fa-fw fa-2x fab fa-liberapay"
+          ></i>
+      </a>
+      <a class="nav-link social-link p-0 me-1 mb-2" target="_blank" href="https://linkedin.com/in/yourlinkedinusername" title="领英" rel="me">
+        <i class="fa-fw fa-2x fab fa-linkedin-in"
+           style="color: #0a66c2;"></i>
+      </a>
+      <a class="nav-link social-link p-0 me-1 mb-2" target="_blank" href="https://mastodon.social/@yourmastodonusername" title="Mastodon" rel="me">
+        <i class="fa-fw fa-2x fab fa-mastodon"
+           style="color: #5c4ce2;"></i>
+      </a>
+      <a class="nav-link social-link p-0 me-1 mb-2" target="_blank" href="https://medium.com/@yourmediumusername" title="Medium" rel="me">
+        <i class="fa-fw fa-2x fab fa-medium-m"
+          ></i>
+      </a>
+      <a class="nav-link social-link p-0 me-1 mb-2" target="_blank" href="https://www.patreon.com/razonyang" title="Patreon" rel="me">
+        <i class="fa-fw fa-2x fab fa-patreon"
+           style="color: #ff424d;"></i>
+      </a>
+      <a class="nav-link social-link p-0 me-1 mb-2" target="_blank" href="https://www.paypal.com/paypalme/razonyang" title="PayPal" rel="me">
+        <i class="fa-fw fa-2x fab fa-paypal"
+          ></i>
+      </a>
+      <a class="nav-link social-link p-0 me-1 mb-2" target="_blank" href="https://www.pinterest.com/yourpinterestusername" title="Pinterest" rel="me">
+        <i class="fa-fw fa-2x fab fa-pinterest"
+           style="color: #cc0000;"></i>
+      </a>
+      <a class="nav-link social-link p-0 me-1 mb-2" target="_blank" href="https://wpa.qq.com/msgrd?v=3&amp;uin=yourqqnumber&amp;site=qq&amp;menu=yes" title="QQ" rel="me">
+        <i class="fa-fw fa-2x fab fa-qq"
+          ></i>
+      </a>
+      <a class="nav-link social-link p-0 me-1 mb-2" target="_blank" href="https://www.quora.com/profile/yourquorausername" title="Quora" rel="me">
+        <i class="fa-fw fa-2x fab fa-quora"
+           style="color: #b92b27;"></i>
+      </a>
+      <a class="nav-link social-link p-0 me-1 mb-2" target="_blank" href="https://www.reddit.com/user/yourredditusername" title="Reddit" rel="me">
+        <i class="fa-fw fa-2x fab fa-reddit"
+           style="color: #FF4500;"></i>
+      </a>
+      <a class="nav-link social-link p-0 me-1 mb-2" target="_blank" href="https://stackoverflow.com/users/yourstackoverflowuserid" title="Stack Overflow" rel="me">
+        <i class="fa-fw fa-2x fab fa-stack-overflow"
+           style="color: #f48024;"></i>
+      </a>
+      <a class="nav-link social-link p-0 me-1 mb-2" target="_blank" href="https://t.me/yourtelegramusername" title="Telegram" rel="me">
+        <i class="fa-fw fa-2x fab fa-telegram-plane"
+           style="color: #2481cc;"></i>
+      </a>
+      <a class="nav-link social-link p-0 me-1 mb-2" target="_blank" href="https://www.tiktok.com/@yourtiktokusername" title="TikTok" rel="me">
+        <i class="fa-fw fa-2x fab fa-tiktok"
+          ></i>
+      </a>
+      <a class="nav-link social-link p-0 me-1 mb-2" target="_blank" href="https://fr.tipeee.com/yourtipeeeaccount-fr" title="Tipeee" rel="me">
+        <i class="fa-fw fa-2x fab fa-tipeee"
+           style="color: #f2485b;"></i>
+      </a>
+      <a class="nav-link social-link p-0 me-1 mb-2" target="_blank" href="https://yourtumblrusername.tumblr.com" title="Tumblr" rel="me">
+        <i class="fa-fw fa-2x fab fa-tumblr"
+          ></i>
+      </a>
+      <a class="nav-link social-link p-0 me-1 mb-2" target="_blank" href="https://twitter.com/yourtwitterusername" title="推特" rel="me">
+        <i class="fa-fw fa-2x fab fa-twitter"
+           style="color: #1d9bf0;"></i>
+      </a>
+      <a class="nav-link social-link p-0 me-1 mb-2" target="_blank" href="https://weibo.com/yourweibousername" title="微博" rel="me">
+        <i class="fa-fw fa-2x fab fa-weibo"
+           style="color: #e1162c;"></i>
+      </a>
+      <a class="nav-link social-link p-0 me-1 mb-2" target="_blank" href="https://www.xing.com/profile/yourxingusername" title="XING" rel="me">
+        <i class="fa-fw fa-2x fab fa-xing"
+          ></i>
+      </a>
+      <a class="nav-link social-link p-0 me-1 mb-2" target="_blank" href="https://www.youtube.com/channel/youryoutubechannelid" title="YouTube" rel="me">
+        <i class="fa-fw fa-2x fab fa-youtube"
+           style="color: #ff0000;"></i>
+      </a>
+      <a class="nav-link social-link p-0 me-1 mb-2" target="_blank" href="https://www.zhihu.com/people/yourzhihuusername" title="知乎" rel="me">
+        <i class="fa-fw fa-2x fab fa-zhihu"
+           style="color: #056de8;"></i>
+      </a>
+  <a class="nav-link social-link p-0 me-1 mb-2" target="_blank" href="/index.xml" title="RSS" rel="me">
+    <i class="fas fa-fw fa-2x fa-rss" style="color: #ea6221;"></i>
+  </a>
+</nav>
+</div>
+  <div class="col-12 col-lg-8 offset-0 offset-lg-1"></div>
+</div>
+</footer>
+<script data-precache src="/assets/main/bundle.min.d614afab93c3f1c997cd00bf226c10b744d1d088be139975ad583877ad35e91a.js" integrity="sha256-1hSvq5PD8cmXzQC/ImwQt0TR0Ii&#43;E5l1rVg4d6016Ro=" crossorigin="anonymous" async></script><script data-precache src="/assets/icons/bundle.min.4f30d5267a9f2f9d45ed93969d45ec626100a969a8b91f71f753315a261e9034.js" integrity="sha256-TzDVJnqfL51F7ZOWnUXsYmEAqWmouR9x91MxWiYekDQ=" crossorigin="anonymous" defer></script>
+<script data-precache src="/assets/viewer/bundle.min.06371891cfe6d10d36cba465c61c4d7cb17591a3be2fd9af4a38444d2074e709.js" integrity="sha256-BjcYkc/m0Q02y6RlxhxNfLF1kaO&#43;L9mvSjhETSB05wk=" crossorigin="anonymous" defer></script>
+<script src="/js/sw-register.js" defer></script>
+<script src="https://giscus.app/client.js"
+    data-repo="razonyang/hugo-theme-bootstrap-skeleton"
+    data-repo-id="R_kgDOHJi95g"
+    data-category="General"
+    data-category-id="DIC_kwDOHJi95s4CTy6q"
+    data-mapping="pathname"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="preferred_color_scheme"
+    data-lang="zh-CN"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    defer>
+</script>
+
+
+  </body>
+</html>

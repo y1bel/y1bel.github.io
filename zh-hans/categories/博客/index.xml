@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>博客 on HBS 脚手架</title>
+    <link>http://localhost:1313/zh-hans/categories/%E5%8D%9A%E5%AE%A2/</link>
+    <description>Recent content in 博客 on HBS 脚手架</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-hans</language>
+    <copyright>© 2024-2024 Yibel. All Rights Reserved.
+</copyright>
+    <lastBuildDate>Fri, 10 May 2024 22:27:40 +0800</lastBuildDate><atom:link href="http://localhost:1313/zh-hans/categories/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo &#43; GitHub Pages 部署个人博客</title>
+      <link>http://localhost:1313/zh-hans/posts/blog/createblogbyhugo/</link>
+      <pubDate>Fri, 10 May 2024 22:27:40 +0800</pubDate>
+      
+      <guid>http://localhost:1313/zh-hans/posts/blog/createblogbyhugo/</guid>
+      <description><![CDATA[使用Hugo和GitHub Pages部署个人博客 安装Hugo 安装 Git 安装 Go 安装 Hugo 选择extended版 windows平台：解压后，在文件夹中新]]></description>
+    </item>
+    
+  </channel>
+</rss>
+

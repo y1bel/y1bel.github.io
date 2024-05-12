@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Markdown on Yibel&#39;s</title>
+    <link>http://localhost:1313/categories/markdown/</link>
+    <description>Recent content in Markdown on Yibel&#39;s</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2016-2024 Yibel. All Rights Reserved.
+</copyright>
+    <lastBuildDate>Tue, 01 Oct 2019 17:55:28 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Emoji Support</title>
+      <link>http://localhost:1313/posts/emoji-support/</link>
+      <pubDate>Tue, 01 Oct 2019 17:55:28 +0800</pubDate>
+      
+      <guid>http://localhost:1313/posts/emoji-support/</guid>
+      <description><![CDATA[<p>Emoji can be enabled in a Hugo project in a number of ways.</p>]]></description><enclosure url="http://localhost:1313/posts/emoji-support/featured-image.jpg" length="31139" type="image/jpeg" />
+    </item>
+    
+  </channel>
+</rss>
+

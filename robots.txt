@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://y1bel.github.io/sitemap.xml
