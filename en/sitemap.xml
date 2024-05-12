@@ -243,5 +243,17 @@
                 />
   </url><url>
     <loc>https://y1bel.github.io/en/categories/documentation/</loc>
+  </url><url>
+    <loc>https://y1bel.github.io/en/authors/yibel/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-hans"
+                href="https://y1bel.github.io/authors/yibel/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://y1bel.github.io/en/authors/yibel/"
+                />
   </url>
 </urlset>

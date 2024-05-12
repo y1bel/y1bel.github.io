@@ -8,7 +8,16 @@
     <language>zh-hans</language>
     <copyright>© 2024-2024 Yibel. All Rights Reserved.
 </copyright>
-    <lastBuildDate>Sun, 12 May 2024 15:54:35 +0800</lastBuildDate><atom:link href="https://y1bel.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 May 2024 23:14:28 +0800</lastBuildDate><atom:link href="https://y1bel.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo主题切换为HSB</title>
+      <link>https://y1bel.github.io/posts/hugohbstheme/</link>
+      <pubDate>Sun, 12 May 2024 23:14:28 +0800</pubDate>
+      
+      <guid>https://y1bel.github.io/posts/hugohbstheme/</guid>
+      <description><![CDATA[<p>Hugo Bootstrap Theme(HBS) 是一个快速、响应式、多用途和功能丰富的 Hugo 主题。其通常用于博客和文档站点，地址：<a href="https://github.com/razonyang/hugo-theme-bootstrap" target="_blank" rel="noopener noreferrer">hugo-theme-bootstrap<i class="fas fa-external-link-square-alt ms-1"></i></a>。因为此主题比较符合个人需求且文档较详细，所以将Hugo主题进行更改。</p>]]></description><enclosure url="https://y1bel.github.io/posts/hugohbstheme/featured-image.png" length="15491" type="image/png" />
+    </item>
+    
     <item>
       <title>Hugo&#43;GitHub Pages部署个人博客</title>
       <link>https://y1bel.github.io/posts/newsitebyhugo/</link>
