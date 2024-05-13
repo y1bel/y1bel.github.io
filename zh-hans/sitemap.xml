@@ -23,16 +23,6 @@
   </url><url>
     <loc>https://y1bel.github.io/posts/</loc>
     <lastmod>2024-05-12T23:14:28+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://y1bel.github.io/en/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hans"
-                href="https://y1bel.github.io/posts/"
-                />
   </url><url>
     <loc>https://y1bel.github.io/</loc>
     <lastmod>2024-05-12T23:14:28+08:00</lastmod>
@@ -107,9 +97,6 @@
     <loc>https://y1bel.github.io/docs/installation/</loc>
     <lastmod>2022-09-06T22:42:23+08:00</lastmod>
   </url><url>
-    <loc>https://y1bel.github.io/docs/introduction/</loc>
-    <lastmod>2022-09-06T22:42:23+08:00</lastmod>
-  </url><url>
     <loc>https://y1bel.github.io/tags/linux/</loc>
     <lastmod>2022-09-06T22:42:23+08:00</lastmod>
   </url><url>
@@ -154,132 +141,6 @@
                 href="https://y1bel.github.io/series/"
                 />
   </url><url>
-    <loc>https://y1bel.github.io/tags/crop/</loc>
-    <lastmod>2022-07-08T11:34:47+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://y1bel.github.io/en/tags/crop/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hans"
-                href="https://y1bel.github.io/tags/crop/"
-                />
-  </url><url>
-    <loc>https://y1bel.github.io/tags/fill/</loc>
-    <lastmod>2022-07-08T11:34:47+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://y1bel.github.io/en/tags/fill/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hans"
-                href="https://y1bel.github.io/tags/fill/"
-                />
-  </url><url>
-    <loc>https://y1bel.github.io/tags/filters/</loc>
-    <lastmod>2022-07-08T11:34:47+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://y1bel.github.io/en/tags/filters/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hans"
-                href="https://y1bel.github.io/tags/filters/"
-                />
-  </url><url>
-    <loc>https://y1bel.github.io/tags/fit/</loc>
-    <lastmod>2022-07-08T11:34:47+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://y1bel.github.io/en/tags/fit/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hans"
-                href="https://y1bel.github.io/tags/fit/"
-                />
-  </url><url>
-    <loc>https://y1bel.github.io/categories/image/</loc>
-    <lastmod>2022-07-08T11:34:47+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://y1bel.github.io/en/categories/image/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hans"
-                href="https://y1bel.github.io/categories/image/"
-                />
-  </url><url>
-    <loc>https://y1bel.github.io/news/2022/07/more-image-processing-methods/</loc>
-    <lastmod>2022-07-08T11:34:47+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://y1bel.github.io/en/news/2022/07/more-image-processing-methods/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hans"
-                href="https://y1bel.github.io/news/2022/07/more-image-processing-methods/"
-                />
-  </url><url>
-    <loc>https://y1bel.github.io/series/news/</loc>
-    <lastmod>2022-07-08T11:34:47+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://y1bel.github.io/en/series/news/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hans"
-                href="https://y1bel.github.io/series/news/"
-                />
-  </url><url>
-    <loc>https://y1bel.github.io/authors/razonyang/</loc>
-    <lastmod>2022-07-08T11:34:47+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://y1bel.github.io/en/authors/razonyang/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hans"
-                href="https://y1bel.github.io/authors/razonyang/"
-                />
-  </url><url>
-    <loc>https://y1bel.github.io/news/</loc>
-    <lastmod>2022-07-08T11:34:47+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://y1bel.github.io/en/news/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hans"
-                href="https://y1bel.github.io/news/"
-                />
-  </url><url>
-    <loc>https://y1bel.github.io/tags/readme/</loc>
-    <lastmod>2022-04-17T16:35:29+08:00</lastmod>
-  </url><url>
-    <loc>https://y1bel.github.io/blog/2022/04/readme/</loc>
-    <lastmod>2022-04-17T16:35:29+08:00</lastmod>
-  </url><url>
-    <loc>https://y1bel.github.io/blog/</loc>
-    <lastmod>2022-04-17T16:35:29+08:00</lastmod>
-  </url><url>
     <loc>https://y1bel.github.io/archives/2022/</loc>
     <xhtml:link
                 rel="alternate"
@@ -292,11 +153,45 @@
                 href="https://y1bel.github.io/archives/2022/"
                 />
   </url><url>
+    <loc>https://y1bel.github.io/archives/2024/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://y1bel.github.io/en/archives/2024/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-hans"
+                href="https://y1bel.github.io/archives/2024/"
+                />
+  </url><url>
     <loc>https://y1bel.github.io/about/</loc>
   </url><url>
     <loc>https://y1bel.github.io/offline/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://y1bel.github.io/en/offline/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-hans"
+                href="https://y1bel.github.io/offline/"
+                />
   </url><url>
     <loc>https://y1bel.github.io/tags/installation/_index.zh-cn/</loc>
+  </url><url>
+    <loc>https://y1bel.github.io/blog/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://y1bel.github.io/en/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-hans"
+                href="https://y1bel.github.io/blog/"
+                />
   </url><url>
     <loc>https://y1bel.github.io/archives/</loc>
     <xhtml:link
@@ -310,14 +205,46 @@
                 href="https://y1bel.github.io/archives/"
                 />
   </url><url>
-    <loc>https://y1bel.github.io/contact/</loc>
+    <loc>https://y1bel.github.io/contact_disabled/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://y1bel.github.io/en/contact_disabled/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-hans"
+                href="https://y1bel.github.io/contact_disabled/"
+                />
   </url><url>
     <loc>https://y1bel.github.io/tags/content/_index.zh-cn/</loc>
   </url><url>
     <loc>https://y1bel.github.io/tags/configuration/_index.zh-cn/</loc>
   </url><url>
     <loc>https://y1bel.github.io/search/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://y1bel.github.io/en/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-hans"
+                href="https://y1bel.github.io/search/"
+                />
   </url><url>
     <loc>https://y1bel.github.io/categories/documentation/_index.zh-cn/</loc>
+  </url><url>
+    <loc>https://y1bel.github.io/news/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://y1bel.github.io/en/news/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-hans"
+                href="https://y1bel.github.io/news/"
+                />
   </url>
 </urlset>

@@ -1,7 +1,7 @@
 <!doctype html>
 <html class="position-relative" itemscope itemtype="https://schema.org/WebPage" lang="zh-hans"
   data-bs-theme="auto" data-palette="purple">
-  <head><script src="/assets/init/bundle.min.34d0db9959878c2bffea04737d3b7db96c4c5af256ab50e1b9a05f9ebde3ee73.js" integrity="sha256-NNDbmVmHjCv/6gRzfTt9uWxMWvJWq1DhuaBfnr3j7nM=" crossorigin="anonymous"></script>
+  <head><script src="/assets/init/bundle.min.4e9a5a0d0e4c499f21073caf124c30b7bf029d61de765854d7a6065ad2c45a58.js" integrity="sha256-TppaDQ5MSZ8hBzyvEkwwt78CnWHedlhU16YGWtLEWlg=" crossorigin="anonymous"></script>
 <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hugo主题切换为HBS | Yibel&#39;s Blog</title>
@@ -32,7 +32,7 @@
   <meta itemprop="description" content="Hugo Bootstrap Theme(HBS) 是一个快速、响应式、多用途和功能丰富的 Hugo 主题。其通常用于博客和文档站点，地址：hugo-theme-bootstrap。因为此主题比较符合个人需求且文档较详细，所以将Hugo主题进行更改。">
   <meta itemprop="datePublished" content="2024-05-12T23:14:28+08:00">
   <meta itemprop="dateModified" content="2024-05-12T23:14:28+08:00">
-  <meta itemprop="wordCount" content="502">
+  <meta itemprop="wordCount" content="528">
   <meta itemprop="image" content="https://y1bel.github.io/posts/hugohbstheme/featured-image.png">
   <meta itemprop="keywords" content="Hugo">
   <meta property="og:image:alt" content="Hugo主题切换为HBS" />
@@ -42,7 +42,7 @@
   
 
 
-<link data-precache rel="stylesheet" href="/assets/main/bundle.min.a6b3e131602166a8f146e5650033fb30fca2926e4acdb2773074ac6ec708f9d8.css" integrity="sha256-prPhMWAhZqjxRuVlADP7MPyikm5KzbJ3MHSsbscI+dg=" crossorigin="anonymous">
+<link data-precache rel="stylesheet" href="/assets/main/bundle.min.57f9b76fb918382f603ae66dc8400f95e4d54b0d40fa3ba0d0adba15d65f5a7a.css" integrity="sha256-V/m3b7kYOC9gOuZtyEAPleTVSw1A+jug0K26FdZfWno=" crossorigin="anonymous">
 
     <link data-precache rel="stylesheet" href="/assets/viewer/bundle.min.8c1002839fa22c1350d6ae1eef6593120e108f973c41348be9b5065430566aaf.css" integrity="sha256-jBACg5&#43;iLBNQ1q4e72WTEg4Qj5c8QTSL6bUGVDBWaq8=" crossorigin="anonymous">
 
@@ -68,7 +68,7 @@ Yibel&#39;s Blog
         <hr class="d-xxl-none">
         <ul class="navbar-nav flex-row flex-wrap align-items-center me-auto"><li class="nav-item col-6 col-xxl-auto">
             <a class="nav-link py-2 px-0 px-xxl-2" href="https://y1bel.github.io/docs/">
-<span class="menu-icon me-1"><i class="fas fa-fw fa-file"></i></span>示例文档
+<span class="menu-icon me-1"><i class="fas fa-fw fa-file"></i></span>文档
             </a>
           </li><li class="nav-item col-6 col-xxl-auto">
             <a class="nav-link py-2 px-0 px-xxl-2" href="https://y1bel.github.io/news/">
@@ -397,10 +397,10 @@ Yibel&#39;s Blog
 </div><div class="post-content mb-3" data-bs-spy="scroll" data-bs-target="#TableOfContents" tabindex="0">
         <div id="post-content-body"><p>Hugo Bootstrap Theme(HBS) 是一个快速、响应式、多用途和功能丰富的 Hugo 主题。其通常用于博客和文档站点，地址：<a href="https://github.com/razonyang/hugo-theme-bootstrap" target="_blank" rel="noopener noreferrer">hugo-theme-bootstrap<i class="fas fa-external-link-square-alt ms-1"></i></a>。因为此主题比较符合个人需求且文档较详细，所以将Hugo主题进行更改。</p>
 
-<h3 id="通过git-submodule-安装主题" data-numberify>通过Git Submodule 安装主题<a class="anchor ms-1" href="#通过git-submodule-安装主题"></a></h3>
+<h2 id="通过git-submodule-安装主题" data-numberify>通过Git Submodule 安装主题<a class="anchor ms-1" href="#通过git-submodule-安装主题"></a></h2>
 <p>参考： <a href="https://hbs.razonyang.com/v1/zh-hans/docs/getting-started/installation/git-submodule/" target="_blank" rel="noopener noreferrer">官方文档<i class="fas fa-external-link-square-alt ms-1"></i></a></p>
 
-<h4 id="安装到站点" data-numberify>安装到站点<a class="anchor ms-1" href="#安装到站点"></a></h4>
+<h3 id="安装到站点" data-numberify>安装到站点<a class="anchor ms-1" href="#安装到站点"></a></h3>
 <p>先删掉之前的配置文档 hugo.yaml 或 config.yaml，然后进入 /blog 右键打开 Git Bash 执行以下命令</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ git submodule add https://github.com/razonyang/hugo-theme-bootstrap themes/hugo-theme-bootstrap
 </span></span><span class="line"><span class="cl">$ git clone https://github.com/razonyang/hugo-theme-bootstrap-skeleton /tmp/hbs-skeleton
@@ -415,9 +415,9 @@ Yibel&#39;s Blog
 </span></span><span class="line"><span class="cl">$ npm install
 </span></span><span class="line"><span class="cl">$ hugo server
 </span></span></code></pre></div>
-<h3 id="配置" data-numberify>配置<a class="anchor ms-1" href="#配置"></a></h3>
+<h2 id="配置" data-numberify>配置<a class="anchor ms-1" href="#配置"></a></h2>
 
-<h4 id="多语言中英" data-numberify>多语言（中英）<a class="anchor ms-1" href="#多语言中英"></a></h4>
+<h3 id="多语言中英" data-numberify>多语言（中英）<a class="anchor ms-1" href="#多语言中英"></a></h3>
 <p>参考：<a href="https://hbs.razonyang.com/v1/zh-hans/docs/configuration/multilangual/" target="_blank" rel="noopener noreferrer">配置多语言<i class="fas fa-external-link-square-alt ms-1"></i></a></p>
 <ol>
 <li>编写配置文件 /config/_default/language.yaml</li>
@@ -442,27 +442,55 @@ Yibel&#39;s Blog
 <li>修改文件名，对于 /content 下的 index.md 文件，修改为 index.en.md，而后缀为 .zh-hans.md 的文件，删去 .zh-hans，这样语言切换页面才能生效</li>
 </ol>
 
-<h4 id="站点配置" data-numberify>站点配置<a class="anchor ms-1" href="#站点配置"></a></h4>
+<h3 id="站点配置" data-numberify>站点配置<a class="anchor ms-1" href="#站点配置"></a></h3>
 <p>参考 <a href="https://hbs.razonyang.com/v1/zh-hans/docs/configuration/site/" target="_blank" rel="noopener noreferrer">站点配置<i class="fas fa-external-link-square-alt ms-1"></i></a> 进行配置即可</p>
 
-<h4 id="页面参数" data-numberify>页面参数<a class="anchor ms-1" href="#页面参数"></a></h4>
+<h3 id="页面参数" data-numberify>页面参数<a class="anchor ms-1" href="#页面参数"></a></h3>
 <p>参考 <a href="https://hbs.razonyang.com/v1/zh-hans/docs/configuration/page-params/" target="_blank" rel="noopener noreferrer">页面参数<i class="fas fa-external-link-square-alt ms-1"></i></a> ，建议在 archetypes/default.md 中设置好作为模板</p>
 
-<h4 id="网站logo和名称修改" data-numberify>网站logo和名称修改<a class="anchor ms-1" href="#网站logo和名称修改"></a></h4>
-<p>在 config/_default/params.yaml 中进行如下设置:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="c"># logo图片放在 blog/static/images</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">logo</span><span class="p">:</span><span class="w"> </span><span class="l">images/logo.webp</span><span class="w"> </span><span class="c"># Logo image. Default to images/logo.webp.</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># logo: false # Disable Logo</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">brand</span><span class="p">:</span><span class="w"> </span><span class="l">My Blog</span><span class="w">
-</span></span></span></code></pre></div><p>此配置文件其他设置参考：<a href="https://hbs.razonyang.com/v1/zh-hans/docs/configuration/site-params/" target="_blank" rel="noopener noreferrer">站点参数<i class="fas fa-external-link-square-alt ms-1"></i></a></p>
+<h3 id="网站logo和名称修改" data-numberify>网站logo和名称修改<a class="anchor ms-1" href="#网站logo和名称修改"></a></h3>
+<p>在 config/_default/params.yaml 中进行如下设置（logo图片放在 blog/static/images）:</p>
+<div class="code-toggle border border-secondary rounded px-2 pt-2">
+    <ul class="nav nav-tabs border-secondary mb-0" role="tablist"><li class="nav-item mb-0" role="presentation">
+            <button class="nav-link p-1 active" id="toml-params139784526-tab" data-bs-toggle="tab" data-bs-target="#toml-params139784526" type="button" role="tab" 
+                aria-controls="home" aria-selected="true">
+                TOML
+            </button>
+        </li><li class="nav-item mb-0" role="presentation">
+            <button class="nav-link p-1" id="yaml-params139784526-tab" data-bs-toggle="tab" data-bs-target="#yaml-params139784526" type="button" role="tab" 
+                aria-controls="home" aria-selected="false">
+                YAML
+            </button>
+        </li><li class="nav-item mb-0" role="presentation">
+            <button class="nav-link p-1" id="json-params139784526-tab" data-bs-toggle="tab" data-bs-target="#json-params139784526" type="button" role="tab" 
+                aria-controls="home" aria-selected="false">
+                JSON
+            </button>
+        </li></ul>
+    <div class="tab-content"><div class="tab-pane fade show active" id="toml-params139784526" role="tabpanel" aria-labelledby="toml-params139784526-tab"><p class="user-select-all mt-2 mb-0 text-primary fw-bold">params.toml</p><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">brand</span> <span class="p">=</span> <span class="s1">&#39;My Blog&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">logo</span> <span class="p">=</span> <span class="s1">&#39;images/logo.webp logo.webp.&#39;</span>
+</span></span></code></pre></div></div><div class="tab-pane fade" id="yaml-params139784526" role="tabpanel" aria-labelledby="yaml-params139784526-tab"><p class="user-select-all mt-2 mb-0 text-primary fw-bold">params.yaml</p><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">brand</span><span class="p">:</span><span class="w"> </span><span class="l">My Blog</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">logo</span><span class="p">:</span><span class="w"> </span><span class="l">images/logo.webp logo.webp.</span><span class="w">
+</span></span></span></code></pre></div></div><div class="tab-pane fade" id="json-params139784526" role="tabpanel" aria-labelledby="json-params139784526-tab"><p class="user-select-all mt-2 mb-0 text-primary fw-bold">params.json</p><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&#34;brand&#34;</span><span class="p">:</span> <span class="s2">&#34;My Blog&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&#34;logo&#34;</span><span class="p">:</span> <span class="s2">&#34;images/logo.webp logo.webp.&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div></div></div>
+</div>
 
-<h4 id="修改侧边栏作者介绍" data-numberify>修改侧边栏作者介绍<a class="anchor ms-1" href="#修改侧边栏作者介绍"></a></h4>
-<p>参考 <a href="https://hbs.razonyang.com/v1/zh-hans/docs/widgets/author/" target="_blank" rel="noopener noreferrer">作者小部件<i class="fas fa-external-link-square-alt ms-1"></i></a></p>
-<blockquote>
-<p>注意：头像图片也要放在 blog/static/images</p>
-</blockquote>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>此配置文件其他设置参考：<a href="https://hbs.razonyang.com/v1/zh-hans/docs/configuration/site-params/" target="_blank" rel="noopener noreferrer">站点参数<i class="fas fa-external-link-square-alt ms-1"></i></a></p>
 
-<h4 id="站点作者修改" data-numberify>站点作者修改<a class="anchor ms-1" href="#站点作者修改"></a></h4>
+<h3 id="修改侧边栏作者介绍" data-numberify>修改侧边栏作者介绍<a class="anchor ms-1" href="#修改侧边栏作者介绍"></a></h3>
+<p>参考 <a href="https://hbs.razonyang.com/v1/zh-hans/docs/widgets/author/" target="_blank" rel="noopener noreferrer">作者小部件<i class="fas fa-external-link-square-alt ms-1"></i></a>
+<div class="alert alert-warning" role="alert"><i class="alert-icon fas fa-fw fa-exclamation-triangle me-1"></i>
+
+   头像图片也要放在 blog/static/images 
+</div>
+</p>
+
+<h3 id="站点作者修改" data-numberify>站点作者修改<a class="anchor ms-1" href="#站点作者修改"></a></h3>
 <p>修改 blog/content/authors 中的内容</p></div>
 </div>
 <div class="modal fade" id="rewardModal" tabindex="-1" aria-labelledby="rewardModalLabel" aria-hidden="true">
@@ -569,7 +597,7 @@ Yibel&#39;s Blog
       <div class="col-12 d-flex align-items-center justify-content-center"><picture><img class="profile-avatar rounded-circle " alt="Yibel" src="https://y1bel.github.io/images/profile.webp?v=804043e718db888873aaa444a629a063" loading="lazy" data-viewer-invisible width="736" height="736" />
 </picture>
 </div>
-      <div class="col-12 profile-meta"><div class="profile-name fw-fold fs-lg">Yibel</div><div class="profile-bio">如果我们无法以光速✨前行</div><div class="profile-location"><i class="fas fa-fw fa-map-marker-alt"></i>Earth</div><a class="profile-about text-primary" href="/about/"><i class="fas fa-fw fa-user"></i>About</a><a class="profile-contact text-primary" href="/contact/"><i class="fas fa-fw fa-question-circle"></i>联系我们</a></div>
+      <div class="col-12 profile-meta"><div class="profile-name fw-fold fs-lg">Yibel</div><div class="profile-bio">如果我们无法以光速✨前行</div><div class="profile-location"><i class="fas fa-fw fa-map-marker-alt"></i>Earth</div><a class="profile-about text-primary" href="/about/"><i class="fas fa-fw fa-user"></i>About</a></div>
 
 
 <nav class="social-links nav justify-content-center mt-1 justify-content-around">
@@ -589,7 +617,7 @@ Yibel&#39;s Blog
         <i class="fa-fw fa-2x fab fa-twitter"
            style="color: #1d9bf0;"></i>
       </a>
-  <a class="nav-link social-link" target="_blank" href="/authors/razonyang/index.xml" title="RSS" rel="me">
+  <a class="nav-link social-link" target="_blank" href="/archives/2022/index.xml" title="RSS" rel="me">
     <i class="fas fa-fw fa-2x fa-rss" style="color: #ea6221;"></i>
   </a>
 </nav>
@@ -645,11 +673,7 @@ Yibel&#39;s Blog
                     <div class="tab-pane active" id="taxonomySeries" role="tabpanel" aria-labelledby="taxonomySeriesTab" tabindex="0">
                         <a href="/series/guide/" class="btn btn-sm btn-secondary post-taxonomy ps-3 post-series me-2 mb-2" title="Guide">
                             Guide
-                            <span class="badge badge-sm text-secondary bg-white ms-1">4</span>
-                        </a>
-                        <a href="/series/news/" class="btn btn-sm btn-secondary post-taxonomy ps-3 post-series me-2 mb-2" title="News">
-                            News
-                            <span class="badge badge-sm text-secondary bg-white ms-1">1</span>
+                            <span class="badge badge-sm text-secondary bg-white ms-1">3</span>
                         </a>
                     </div>
                     <div class="tab-pane" id="taxonomyCategories" role="tabpanel" aria-labelledby="taxonomyCategoriesTab" tabindex="0">
@@ -660,10 +684,6 @@ Yibel&#39;s Blog
                         <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="btn btn-sm btn-secondary post-taxonomy ps-3 post-category me-2 mb-2" title="博客搭建">
                             博客搭建
                             <span class="badge badge-sm text-secondary bg-white ms-1">2</span>
-                        </a>
-                        <a href="/categories/image/" class="btn btn-sm btn-secondary post-taxonomy ps-3 post-category me-2 mb-2" title="Image">
-                            Image
-                            <span class="badge badge-sm text-secondary bg-white ms-1">1</span>
                         </a>
                     </div>
                     <div class="tab-pane" id="taxonomyTags" role="tabpanel" aria-labelledby="taxonomyTagsTab" tabindex="0">
@@ -677,26 +697,6 @@ Yibel&#39;s Blog
                         </a>
                         <a href="/tags/arch-linux/" class="btn btn-sm btn-secondary post-taxonomy ps-3 post-tag me-2 mb-2" title="Arch Linux">
                             Arch Linux
-                            <span class="badge badge-sm text-secondary bg-white ms-1">1</span>
-                        </a>
-                        <a href="/tags/crop/" class="btn btn-sm btn-secondary post-taxonomy ps-3 post-tag me-2 mb-2" title="Crop">
-                            Crop
-                            <span class="badge badge-sm text-secondary bg-white ms-1">1</span>
-                        </a>
-                        <a href="/tags/fill/" class="btn btn-sm btn-secondary post-taxonomy ps-3 post-tag me-2 mb-2" title="Fill">
-                            Fill
-                            <span class="badge badge-sm text-secondary bg-white ms-1">1</span>
-                        </a>
-                        <a href="/tags/filters/" class="btn btn-sm btn-secondary post-taxonomy ps-3 post-tag me-2 mb-2" title="Filters">
-                            Filters
-                            <span class="badge badge-sm text-secondary bg-white ms-1">1</span>
-                        </a>
-                        <a href="/tags/fit/" class="btn btn-sm btn-secondary post-taxonomy ps-3 post-tag me-2 mb-2" title="Fit">
-                            Fit
-                            <span class="badge badge-sm text-secondary bg-white ms-1">1</span>
-                        </a>
-                        <a href="/tags/readme/" class="btn btn-sm btn-secondary post-taxonomy ps-3 post-tag me-2 mb-2" title="README">
-                            README
                             <span class="badge badge-sm text-secondary bg-white ms-1">1</span>
                         </a>
                         <a href="/tags/ubuntu/" class="btn btn-sm btn-secondary post-taxonomy ps-3 post-tag me-2 mb-2" title="Ubuntu">
@@ -713,19 +713,11 @@ Yibel&#39;s Blog
                             异~别~
                             <span class="badge badge-sm text-secondary bg-white ms-1">2</span>
                         </a>
-                        <a href="/authors/razonyang/" class="btn btn-sm btn-secondary post-taxonomy ps-3 post-author me-2 mb-2" title="RazonYang">
-                            RazonYang
-                            <span class="badge badge-sm text-secondary bg-white ms-1">1</span>
-                        </a>
                     </div>
                 <div class="tab-pane" id="taxonomyArchives" role="tabpanel" aria-labelledby="taxonomyArchivesTab" tabindex="0">
 
-    <a href="" class="btn btn-sm btn-secondary post-taxonomy ps-3 me-2 mb-2" title="2024">
+    <a href="/archives/2024/" class="btn btn-sm btn-secondary post-taxonomy ps-3 me-2 mb-2" title="2024">
     2024 <span class="badge badge-sm text-secondary bg-white ms-1">2</span>
-    </a>
-
-    <a href="/archives/2022/" class="btn btn-sm btn-secondary post-taxonomy ps-3 me-2 mb-2" title="2022">
-    2022 <span class="badge badge-sm text-secondary bg-white ms-1">2</span>
     </a>
 
 
@@ -754,19 +746,6 @@ Yibel&#39;s Blog
               <li class="nav-item" role="presentation">
                 <button
                   class="nav-link active"
-                  id="featured-posts-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#featured-posts"
-                  type="button"
-                  role="tab"
-                  aria-controls="featured-posts"
-                  aria-selected="true">
-                  精选文章
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
                   id="recent-posts-tab"
                   data-bs-toggle="tab"
                   data-bs-target="#recent-posts"
@@ -782,37 +761,6 @@ Yibel&#39;s Blog
           <div class="tab-content mt-3">
               <div
                 class="tab-pane active"
-                id="featured-posts"
-                role="tabpanel"
-                aria-labelledby="featured-posts-tab"
-                tabindex="0">
-                <ul class="post-list list-unstyled ms-1">
-                    <li class="mb-2">
-  <div class="d-flex">
-      <div
-        class="flex-shrink-0 d-flex justify-content-center align-items-center"
-        style="max-width: 100px"><picture>
-      <source srcset="/news/2022/07/more-image-processing-methods/featured-sample_huc6bcc14d597e300fd9ab4aae536c68a5_498412_500x0_resize_q75_h2_box_2.webp" media="(max-width: 576px)" height="333" width="500">
-      <img class="img-fluid" height="120" width="180" alt="featured-sample.webp" src="/news/2022/07/more-image-processing-methods/featured-sample_huc6bcc14d597e300fd9ab4aae536c68a5_498412_180x0_resize_q75_h2_box_2.webp" data-src="/news/2022/07/more-image-processing-methods/featured-sample.webp" loading="lazy"/>
-    </picture>
-      </div>
-    <div
-      class="flex-grow-1 d-flex flex-column h-auto justify-content-center ms-3">
-      <a class="post-title" href="/news/2022/07/more-image-processing-methods/">
-        More Image Processing Methods
-      </a>
-      <div class="post-meta mt-2">
-        <span class="post-date">
-          2022年7月8日
-        </span>
-      </div>
-    </div>
-  </div>
-                    </li>
-                </ul>
-              </div>
-              <div
-                class="tab-pane"
                 id="recent-posts"
                 role="tabpanel"
                 aria-labelledby="recent-posts-tab"
@@ -879,10 +827,19 @@ Yibel&#39;s Blog
     <div class="card-body collapse accordion-collapse accordion-body d-lg-block" id="post-toc">
       <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#通过git-submodule-安装主题">通过Git Submodule 安装主题</a>
       <ul>
-        <li><a href="#通过git-submodule-安装主题">通过Git Submodule 安装主题</a></li>
-        <li><a href="#配置">配置</a></li>
+        <li><a href="#安装到站点">安装到站点</a></li>
+      </ul>
+    </li>
+    <li><a href="#配置">配置</a>
+      <ul>
+        <li><a href="#多语言中英">多语言（中英）</a></li>
+        <li><a href="#站点配置">站点配置</a></li>
+        <li><a href="#页面参数">页面参数</a></li>
+        <li><a href="#网站logo和名称修改">网站logo和名称修改</a></li>
+        <li><a href="#修改侧边栏作者介绍">修改侧边栏作者介绍</a></li>
+        <li><a href="#站点作者修改">站点作者修改</a></li>
       </ul>
     </li>
   </ul>
@@ -961,15 +918,15 @@ Yibel&#39;s Blog
   <div class="col-12 col-lg-8 offset-0 offset-lg-1"></div>
 </div>
 </footer>
-<script data-precache src="/assets/main/bundle.min.91578ae3a6c71e23f1ab7a0474dc1baaadf5b68c21fd87cdb33950f7420bbe51.js" integrity="sha256-kVeK46bHHiPxq3oEdNwbqq31towh/YfNszlQ90ILvlE=" crossorigin="anonymous" async></script><script data-precache src="/assets/icons/bundle.min.4f30d5267a9f2f9d45ed93969d45ec626100a969a8b91f71f753315a261e9034.js" integrity="sha256-TzDVJnqfL51F7ZOWnUXsYmEAqWmouR9x91MxWiYekDQ=" crossorigin="anonymous" defer></script>
+<script data-precache src="/assets/main/bundle.min.2a888bbe4a01ed7e5004f8ef64f278fdb13e018ab366c188e309d23ed1793379.js" integrity="sha256-KoiLvkoB7X5QBPjvZPJ4/bE&#43;AYqzZsGI4wnSPtF5M3k=" crossorigin="anonymous" async></script><script data-precache src="/assets/icons/bundle.min.4f30d5267a9f2f9d45ed93969d45ec626100a969a8b91f71f753315a261e9034.js" integrity="sha256-TzDVJnqfL51F7ZOWnUXsYmEAqWmouR9x91MxWiYekDQ=" crossorigin="anonymous" defer></script>
 <script data-precache src="/assets/viewer/bundle.min.06371891cfe6d10d36cba465c61c4d7cb17591a3be2fd9af4a38444d2074e709.js" integrity="sha256-BjcYkc/m0Q02y6RlxhxNfLF1kaO&#43;L9mvSjhETSB05wk=" crossorigin="anonymous" defer></script><script data-precache defer src="/assets/mermaid/bundle.min.3a9f35484e6fe6d5a26b9c4862bc9a09e1360c7321d1dc061756bc4cf4ca773c.js" integrity="sha256-Op81SE5v5tWia5xIYryaCeE2DHMh0dwGF1a8TPTKdzw=" crossorigin="anonymous"></script>
 
 <script src="/js/sw-register.js" defer></script>
 <script src="https://giscus.app/client.js"
-    data-repo="razonyang/hugo-theme-bootstrap-skeleton"
-    data-repo-id="R_kgDOHJi95g"
+    data-repo="y1bel/y1bel.github.io"
+    data-repo-id="R_kgDOL5y6oA"
     data-category="General"
-    data-category-id="DIC_kwDOHJi95s4CTy6q"
+    data-category-id="DIC_kwDOL5y6oM4CfUmT"
     data-mapping="pathname"
     data-reactions-enabled="1"
     data-emit-metadata="0"

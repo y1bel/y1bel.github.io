@@ -27,24 +27,6 @@
       <description><![CDATA[使用Hugo和GitHub Pages部署个人博客 安装Hugo 安装 Git 安装 Go 安装 Hugo 选择extended版 windows平台：解压后，在文件夹中新]]></description><enclosure url="https://y1bel.github.io/posts/newsitebyhugo/featured-image.png" length="15491" type="image/png" />
     </item>
     
-    <item>
-      <title>More Image Processing Methods</title>
-      <link>https://y1bel.github.io/news/2022/07/more-image-processing-methods/</link>
-      <pubDate>Fri, 08 Jul 2022 11:34:47 +0800</pubDate>
-      
-      <guid>https://y1bel.github.io/news/2022/07/more-image-processing-methods/</guid>
-      <description><![CDATA[<p>Since <code>v1.0.0-alpha.1</code>, HBS supports much more image processing methods. Such as Crop, Fit and Fill images. You can also apply filters on an image.</p>]]></description><enclosure url="https://y1bel.github.io/news/2022/07/more-image-processing-methods/featured-sample.webp" length="498412" type="image/webp" />
-    </item>
-    
-    <item>
-      <title>README</title>
-      <link>https://y1bel.github.io/blog/2022/04/readme/</link>
-      <pubDate>Sun, 17 Apr 2022 16:35:29 +0800</pubDate>
-      
-      <guid>https://y1bel.github.io/blog/2022/04/readme/</guid>
-      <description><![CDATA[<p>See also <a href="https://github.com/razonyang/hugo-theme-bootstrap-skeleton/blob/main/README.md" target="_blank" rel="noopener noreferrer">README.md<i class="fas fa-external-link-square-alt ms-1"></i></a>.</p>]]></description>
-    </item>
-    
   </channel>
 </rss>
 
