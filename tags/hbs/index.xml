@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>HBS on Yibel&#39;s Blog</title>
+    <link>https://y1bel.github.io/tags/hbs/</link>
+    <description>Recent content in HBS on Yibel&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-hans</language>
+    <copyright>© 2024-2024 Yibel. All Rights Reserved.
+</copyright>
+    <lastBuildDate>Mon, 13 May 2024 21:44:09 +0800</lastBuildDate><atom:link href="https://y1bel.github.io/tags/hbs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo博客装修记</title>
+      <link>https://y1bel.github.io/posts/hugo%E5%8D%9A%E5%AE%A2%E8%A3%85%E4%BF%AE%E8%AE%B0/</link>
+      <pubDate>Mon, 13 May 2024 21:44:09 +0800</pubDate>
+      
+      <guid>https://y1bel.github.io/posts/hugo%E5%8D%9A%E5%AE%A2%E8%A3%85%E4%BF%AE%E8%AE%B0/</guid>
+      <description><![CDATA[博客装修记1.0 目录固定 页面太长滚动时让侧边栏目录固定，参考：粘性小部件 在 assets/main/scss/_custom.scss 中添加以下代码 .sidebar { .post-toc { position: sticky !important; top: 84px; order: 5; } }]]></description>
+    </item>
+    
+    <item>
+      <title>配置评论区</title>
+      <link>https://y1bel.github.io/posts/%E9%85%8D%E7%BD%AE%E8%AF%84%E8%AE%BA%E5%8C%BA/</link>
+      <pubDate>Mon, 13 May 2024 19:41:42 +0800</pubDate>
+      
+      <guid>https://y1bel.github.io/posts/%E9%85%8D%E7%BD%AE%E8%AF%84%E8%AE%BA%E5%8C%BA/</guid>
+      <description><![CDATA[配置Giscus 准备 选择一个public仓库用于保存评论（用{username}.github.io仓库就行） Setting -&gt; General 找到 Discussions 并勾选 安装 giscus 配置 参]]></description>
+    </item>
+    
+    <item>
+      <title>Hugo主题切换为HBS</title>
+      <link>https://y1bel.github.io/posts/hugohbstheme/</link>
+      <pubDate>Sun, 12 May 2024 23:14:28 +0800</pubDate>
+      
+      <guid>https://y1bel.github.io/posts/hugohbstheme/</guid>
+      <description><![CDATA[<p>Hugo Bootstrap Theme(HBS) 是一个快速、响应式、多用途和功能丰富的 Hugo 主题。其通常用于博客和文档站点，地址：<a href="https://github.com/razonyang/hugo-theme-bootstrap" target="_blank" rel="noopener noreferrer">hugo-theme-bootstrap<i class="fas fa-external-link-square-alt ms-1"></i></a>。因为此主题比较符合个人需求且文档较详细，所以将Hugo主题进行更改。</p>]]></description><enclosure url="https://y1bel.github.io/posts/hugohbstheme/featured-image.png" length="15491" type="image/png" />
+    </item>
+    
+  </channel>
+</rss>
+

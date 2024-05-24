@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://y1bel.github.io/authors/</loc>
-    <lastmod>2024-05-12T23:14:28+08:00</lastmod>
+    <lastmod>2024-05-13T21:44:09+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -15,17 +15,17 @@
                 href="https://y1bel.github.io/authors/"
                 />
   </url><url>
+    <loc>https://y1bel.github.io/tags/hbs/</loc>
+    <lastmod>2024-05-13T21:44:09+08:00</lastmod>
+  </url><url>
     <loc>https://y1bel.github.io/tags/hugo/</loc>
-    <lastmod>2024-05-12T23:14:28+08:00</lastmod>
+    <lastmod>2024-05-13T21:44:09+08:00</lastmod>
   </url><url>
-    <loc>https://y1bel.github.io/posts/hugohbstheme/</loc>
-    <lastmod>2024-05-12T23:14:28+08:00</lastmod>
-  </url><url>
-    <loc>https://y1bel.github.io/posts/</loc>
-    <lastmod>2024-05-12T23:14:28+08:00</lastmod>
+    <loc>https://y1bel.github.io/posts/hugo%E5%8D%9A%E5%AE%A2%E8%A3%85%E4%BF%AE%E8%AE%B0/</loc>
+    <lastmod>2024-05-13T21:44:09+08:00</lastmod>
   </url><url>
     <loc>https://y1bel.github.io/</loc>
-    <lastmod>2024-05-12T23:14:28+08:00</lastmod>
+    <lastmod>2024-05-13T21:44:09+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -38,7 +38,7 @@
                 />
   </url><url>
     <loc>https://y1bel.github.io/tags/</loc>
-    <lastmod>2024-05-12T23:14:28+08:00</lastmod>
+    <lastmod>2024-05-13T21:44:09+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -50,11 +50,14 @@
                 href="https://y1bel.github.io/tags/"
                 />
   </url><url>
+    <loc>https://y1bel.github.io/posts/</loc>
+    <lastmod>2024-05-13T21:44:09+08:00</lastmod>
+  </url><url>
     <loc>https://y1bel.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
-    <lastmod>2024-05-12T23:14:28+08:00</lastmod>
+    <lastmod>2024-05-13T21:44:09+08:00</lastmod>
   </url><url>
     <loc>https://y1bel.github.io/categories/</loc>
-    <lastmod>2024-05-12T23:14:28+08:00</lastmod>
+    <lastmod>2024-05-13T21:44:09+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -67,7 +70,7 @@
                 />
   </url><url>
     <loc>https://y1bel.github.io/authors/yibel/</loc>
-    <lastmod>2024-05-12T23:14:28+08:00</lastmod>
+    <lastmod>2024-05-13T21:44:09+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -78,6 +81,12 @@
                 hreflang="zh-hans"
                 href="https://y1bel.github.io/authors/yibel/"
                 />
+  </url><url>
+    <loc>https://y1bel.github.io/posts/%E9%85%8D%E7%BD%AE%E8%AF%84%E8%AE%BA%E5%8C%BA/</loc>
+    <lastmod>2024-05-13T19:41:42+08:00</lastmod>
+  </url><url>
+    <loc>https://y1bel.github.io/posts/hugohbstheme/</loc>
+    <lastmod>2024-05-12T23:14:28+08:00</lastmod>
   </url><url>
     <loc>https://y1bel.github.io/posts/newsitebyhugo/</loc>
     <lastmod>2024-05-12T15:54:35+08:00</lastmod>

@@ -8,7 +8,25 @@
     <language>zh-hans</language>
     <copyright>© 2024-2024 Yibel. All Rights Reserved.
 </copyright>
-    <lastBuildDate>Sun, 12 May 2024 23:14:28 +0800</lastBuildDate><atom:link href="https://y1bel.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 May 2024 21:44:09 +0800</lastBuildDate><atom:link href="https://y1bel.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo博客装修记</title>
+      <link>https://y1bel.github.io/posts/hugo%E5%8D%9A%E5%AE%A2%E8%A3%85%E4%BF%AE%E8%AE%B0/</link>
+      <pubDate>Mon, 13 May 2024 21:44:09 +0800</pubDate>
+      
+      <guid>https://y1bel.github.io/posts/hugo%E5%8D%9A%E5%AE%A2%E8%A3%85%E4%BF%AE%E8%AE%B0/</guid>
+      <description><![CDATA[博客装修记1.0 目录固定 页面太长滚动时让侧边栏目录固定，参考：粘性小部件 在 assets/main/scss/_custom.scss 中添加以下代码 .sidebar { .post-toc { position: sticky !important; top: 84px; order: 5; } }]]></description>
+    </item>
+    
+    <item>
+      <title>配置评论区</title>
+      <link>https://y1bel.github.io/posts/%E9%85%8D%E7%BD%AE%E8%AF%84%E8%AE%BA%E5%8C%BA/</link>
+      <pubDate>Mon, 13 May 2024 19:41:42 +0800</pubDate>
+      
+      <guid>https://y1bel.github.io/posts/%E9%85%8D%E7%BD%AE%E8%AF%84%E8%AE%BA%E5%8C%BA/</guid>
+      <description><![CDATA[配置Giscus 准备 选择一个public仓库用于保存评论（用{username}.github.io仓库就行） Setting -&gt; General 找到 Discussions 并勾选 安装 giscus 配置 参]]></description>
+    </item>
+    
     <item>
       <title>Hugo主题切换为HBS</title>
       <link>https://y1bel.github.io/posts/hugohbstheme/</link>
@@ -25,6 +43,33 @@
       
       <guid>https://y1bel.github.io/posts/newsitebyhugo/</guid>
       <description><![CDATA[使用Hugo和GitHub Pages部署个人博客 安装Hugo 安装 Git 安装 Go 安装 Hugo 选择extended版 windows平台：解压后，在文件夹中新]]></description><enclosure url="https://y1bel.github.io/posts/newsitebyhugo/featured-image.png" length="15491" type="image/png" />
+    </item>
+    
+    <item>
+      <title>Install on Arch Linux</title>
+      <link>https://y1bel.github.io/docs/installation/linux/archlinux/</link>
+      <pubDate>Tue, 06 Sep 2022 22:42:23 +0800</pubDate>
+      
+      <guid>https://y1bel.github.io/docs/installation/linux/archlinux/</guid>
+      <description><![CDATA[This guide show you how to install on Arch Linux.]]></description>
+    </item>
+    
+    <item>
+      <title>Install on Ubuntu</title>
+      <link>https://y1bel.github.io/docs/installation/linux/ubuntu/</link>
+      <pubDate>Tue, 06 Sep 2022 22:42:23 +0800</pubDate>
+      
+      <guid>https://y1bel.github.io/docs/installation/linux/ubuntu/</guid>
+      <description><![CDATA[This guide show you how to install on Ubuntu.]]></description>
+    </item>
+    
+    <item>
+      <title>Install on Windows</title>
+      <link>https://y1bel.github.io/docs/installation/windows/</link>
+      <pubDate>Tue, 06 Sep 2022 22:42:23 +0800</pubDate>
+      
+      <guid>https://y1bel.github.io/docs/installation/windows/</guid>
+      <description><![CDATA[This guide show you how to install on Windows.]]></description>
     </item>
     
   </channel>
